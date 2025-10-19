@@ -1,0 +1,55 @@
+/* Base look inspired by the portfolio template: clean, single page, grid sections */
+:root{
+  --bg:#0b1020; --panel:#121a34; --ink:#e7ecf3; --muted:#a4afc5; --accent:#9fb6ff; --border:#23304f;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+a{color:var(--accent);text-decoration:none;border-bottom:1px dotted #6e8dfb}
+a:hover{opacity:.9}
+
+/* Top nav */
+.nav{position:sticky;top:0;z-index:50;background:#0f1730cc;backdrop-filter:blur(6px);
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:10px 16px;border-bottom:1px solid var(--border)}
+.nav .brand{font-weight:700;border:0}
+.nav nav{display:flex;gap:12px;flex-wrap:wrap}
+.nav nav a{border:0;color:var(--ink);opacity:.9}
+.nav nav a:hover{opacity:1}
+
+/* Hero */
+.hero{padding:48px 16px;text-align:center;border-bottom:1px solid var(--border);
+  background:linear-gradient(180deg,#0f1730,transparent)}
+.hero h1{margin:0 0 10px;font-size:26px}
+.lead{margin:0;color:var(--muted)}
+
+/* Layout */
+.container{max-width:980px;margin:0 auto;padding:0 16px}
+.section{background:var(--panel);border:1px solid var(--border);border-radius:16px;
+  padding:20px;margin:18px 0;box-shadow:0 2px 12px rgba(0,0,0,.35)}
+.section h2{margin:0 0 12px;font-size:22px;color:#dfe8ff}
+.note{color:var(--muted);margin-top:8px}
+
+/* Certifications grid (badge look similar to template client logos) */
+.badge-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.badge-grid li{display:flex;gap:12px;align-items:center;background:#0e1630;border:1px solid var(--border);border-radius:12px;padding:12px}
+.badge-grid img{width:64px;height:64px;object-fit:contain;flex:0 0 64px}
+.cert-title{font-weight:700}
+.cert-meta{color:var(--muted);font-size:14px}
+
+/* Cards (experience, education items) */
+.card{background:#0e1630;border:1px solid var(--border);border-radius:12px;padding:14px;margin:10px 0}
+.card h3{margin:0 0 6px;font-size:18px}
+.meta{color:var(--muted);font-size:14px;margin-bottom:6px}
+.card ul{margin:8px 0 0 18px}
+
+/* Education list */
+.edu{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.muted{color:var(--muted);margin-top:6px}
+
+/* Skills list */
+.skills{list-style:disc;margin:0 0 0 18px;padding:0}
+
+/* Footer */
+.footer{text-align:center;color:var(--muted);padding:22px}
