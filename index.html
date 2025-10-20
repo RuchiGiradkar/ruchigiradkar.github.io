@@ -1,238 +1,257 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ruchi Giradkar — Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="canonical" href="https://ruchigiradkar.github.io/" />
-  <meta name="description" content="Portfolio of Ruchi Giradkar — Senior Cyber Security / Penetration Tester" />
+  <head>
+    <!-- Inherits styles from the template -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ruchi Giradkar — Portfolio</title>
+    <meta name="description" content="Portfolio of Ruchi Giradkar — Senior Cyber Security / Penetration Tester." />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Strict, tracker-free -->
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    img-src 'self' data:;
-    style-src 'self' 'unsafe-inline';
-    script-src 'self';
-    object-src 'none';
-    base-uri 'self';
-    frame-ancestors 'none';
-    upgrade-insecure-requests
-  ">
-  <meta http-equiv="X-Frame-Options" content="DENY" />
-  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-  <meta name="referrer" content="no-referrer" />
-</head>
+    <!-- Privacy-first security headers (no third-party scripts) -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      img-src 'self' data:;
+      style-src 'self' 'unsafe-inline';
+      script-src 'self';
+      object-src 'none';
+      base-uri 'self';
+      frame-ancestors 'none';
+      upgrade-insecure-requests
+    ">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="no-referrer" />
+  </head>
 
-<body>
+  <body>
+    <!-- Header / Nav (template nav with NO brand/name on the left) -->
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="#clients" class="nav__link">Certifications</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
 
-  <!-- Top Nav -->
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#home">Ruchi Giradkar</a>
-      <nav class="menu">
-        <a href="#about">About</a>
-        <a href="#certs">Certifications</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#languages">Languages</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+        <!-- Hero (same structure; NO email/phone; NO dropdown/arrow) -->
+        <div class="header__text-box row">
+          <div class="header__text">
+            <h1 class="heading-primary">
+              <span>Ruchi Giradkar</span>
+            </h1>
+            <p>Senior Cyber Security / Penetration Tester</p>
+            <p>Regensburg, Bavaria, Germany</p>
 
-  <!-- Hero / Header -->
-  <section class="hero" id="home">
-    <div class="container">
-      <h1 class="hero-title">Senior Cyber Security / Penetration Tester</h1>
-      <p class="hero-sub">
-        Regensburg, Bavaria, Germany ·
-        <a href="mailto:ruchigiradkar@gmail.com" class="link">ruchigiradkar@gmail.com</a> ·
-        <a href="tel:+4917657667613" class="link">+49 176 57666713</a> ·
-        <a href="https://www.linkedin.com/in/ruchi-giradkar" class="link">LinkedIn</a> ·
-        <a href="https://github.com/RuchiGiradkar" class="link">GitHub</a>
-      </p>
-    </div>
-    <a href="#about" class="scroll-down" aria-label="Scroll down">▼</a>
-  </section>
-
-  <main class="container">
-
-    <!-- About -->
-    <section class="section" id="about">
-      <h2 class="section-title"><span>About</span></h2>
-      <div class="card">
-        <p>
-          Cybersecurity professional with 3+ years of cross-domain experience in automotive and IT security, skilled in threat and risk analysis, vulnerability management, and secure architecture design. Former Security &amp; Privacy Specialist at Continental Automotive, with hands-on expertise in aligning cybersecurity controls to automotive security standards. Holds a Master’s degree in Mechatronic and Cyber-Physical Systems from the Deggendorf Institute of Technology, where I developed a Digital Twin Based Intrusion Detection System (IDS) using Docker at Robert Bosch Stuttgart as part of my master’s thesis, providing a strong foundation in embedded systems security and Industry 4.0 resilience. Enhanced my IT security expertise through a Cyber Security Bootcamp, completing a VAPT project using tools such as Nmap, Greenbone, Metasploit, and Autopsy, and earning CompTIA A+, Security+, and CySA+ certifications. Combines a background in software development with global experience across India, Japan, and Germany, and proficiency in Japanese language with developing German language skills, focused on designing resilient and compliant cybersecurity solutions.
-        </p>
+            <!-- Only LinkedIn & GitHub buttons -->
+            <a href="https://www.linkedin.com/in/ruchi-giradkar" class="btn btn--pink" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/RuchiGiradkar" class="btn btn--white" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
       </div>
-    </section>
+    </header>
 
-    <!-- Certifications -->
-    <section class="section" id="certs">
-      <h2 class="section-title"><span>Certifications</span></h2>
-      <ul class="badge-grid">
-        <li class="badge">
-          <img src="assets/badges/csap.png" alt="CompTIA Security Analytics Professional (CSAP) badge">
-          <div class="badge-info">
-            <div class="badge-title">CompTIA Security Analytics Professional (CSAP)</div>
-            <div class="badge-meta">CompTIA • 2025</div>
+    <main role="main">
+      <!-- Work (use template Work section to show your Experience) -->
+      <section class="work" id="work">
+        <div class="row">
+          <h2>Work</h2>
+
+          <div class="work__boxes">
+            <!-- Continental -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Security &amp; Privacy Specialist — Continental Automotive Technologies GmbH</h3>
+                <p class="work__text--sub">Regensburg, Germany • Jul 2021 – Jan 2025</p>
+                <ul class="work__list">
+                  <li>Performed TARA with ANSYS Medini Analyze per ISO/SAE 21434 &amp; UN ECE R155; implemented targeted controls for embedded automotive systems.</li>
+                  <li>Designed/validated security architectures and concept documents aligned to customer requirements and international standards.</li>
+                  <li>Collaborated with stakeholders/suppliers to integrate cybersecurity through the development lifecycle.</li>
+                </ul>
+              </div>
+              <div class="work__image-box">
+                <img src="images/header.jpg" class="work__image" alt="Continental" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Bosch thesis -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Master Thesis Project — Robert Bosch GmbH</h3>
+                <p class="work__text--sub">Stuttgart, Germany • Jul 2020 – Dec 2020</p>
+                <ul class="work__list">
+                  <li>Built a digital twin–based IDS with Docker to improve monitoring, modularity, and threat visibility in Industry 4.0 environments.</li>
+                  <li>Developed detection mechanisms for malicious activity in industrial IoT networks.</li>
+                  <li>Automated alerts and response workflows using Shell &amp; Python scripting.</li>
+                </ul>
+              </div>
+              <div class="work__image-box">
+                <img src="images/project-1.png" class="work__image" alt="Bosch Thesis" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Fujitsu -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Bilingual Assistant Application Developer — Fujitsu Consulting India</h3>
+                <p class="work__text--sub">Feb 2016 – Feb 2019</p>
+                <ul class="work__list">
+                  <li>Developed UI platforms for mobile applications and multi-channel interactions.</li>
+                  <li>Interpreted Japanese design/technical documentation to produce efficient, standards-compliant code.</li>
+                  <li>Enhanced systems by adding new JavaScript functionality.</li>
+                </ul>
+              </div>
+              <div class="work__image-box">
+                <img src="images/project-2.png" class="work__image" alt="Fujitsu" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- NTT DATA -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Trainee — NTT DATA</h3>
+                <p class="work__text--sub">Pune, India • Jun 2015 – Mar 2016</p>
+                <ul class="work__list">
+                  <li>Completed Java development training (OOP, application design fundamentals).</li>
+                  <li>Completed Japanese language training (JLPT N4).</li>
+                </ul>
+              </div>
+              <div class="work__image-box">
+                <img src="images/project-3.png" class="work__image" alt="NTT DATA" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Bootcamp -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Cyber Security Bootcamp</h3>
+                <p class="work__text--sub">2025</p>
+                <ul class="work__list">
+                  <li>16-week program: IT fundamentals, advanced cybersecurity, and risk frameworks (NIST, ISO, GDPR).</li>
+                  <li>Capstone Threat Modeling/Risk Analysis using Nmap, Metasploit, Hydra, Greenbone, DVWA, Autopsy; full VAPT + forensic report.</li>
+                  <li>Earned CompTIA A+, Security+, and CySA+.</li>
+                </ul>
+              </div>
+              <div class="work__image-box">
+                <img src="images/fastlane.png" class="work__image" alt="Bootcamp" loading="lazy" />
+              </div>
+            </div>
           </div>
-        </li>
-        <li class="badge">
-          <img src="assets/badges/cysa.png" alt="CompTIA CySA+ badge">
-          <div class="badge-info">
-            <div class="badge-title">CompTIA Cybersecurity Analyst (CySA+)</div>
-            <div class="badge-meta">CompTIA • 2025</div>
+        </div>
+      </section>
+
+      <!-- Certifications (template "Clients" grid) -->
+      <section class="client" id="clients">
+        <div class="row">
+          <h2>Certifications</h2>
+          <div class="client__logos">
+            <figure class="client__logo-box">
+              <img src="images/badges/csap.png" class="client__logo" alt="CompTIA Security Analytics Professional (CSAP) badge" />
+              <figcaption>CompTIA Security Analytics Professional (CSAP) — 2025</figcaption>
+            </figure>
+            <figure class="client__logo-box">
+              <img src="images/badges/cysa.png" class="client__logo" alt="CompTIA CySA+ badge" />
+              <figcaption>CompTIA CySA+ — 2025</figcaption>
+            </figure>
+            <figure class="client__logo-box">
+              <img src="images/badges/securityplus.png" class="client__logo" alt="CompTIA Security+ badge" />
+              <figcaption>CompTIA Security+ — 2025</figcaption>
+            </figure>
+            <figure class="client__logo-box">
+              <img src="images/badges/aplus.png" class="client__logo" alt="CompTIA A+ badge" />
+              <figcaption>CompTIA A+ — 2025</figcaption>
+            </figure>
+            <figure class="client__logo-box">
+              <img src="images/badges/riscure-embedded.png" class="client__logo" alt="Embedded Systems Security (Riscure Academy) badge" />
+              <figcaption>Embedded Systems Security — Riscure Academy, 2023</figcaption>
+            </figure>
           </div>
-        </li>
-        <li class="badge">
-          <img src="assets/badges/securityplus.png" alt="CompTIA Security+ badge">
-          <div class="badge-info">
-            <div class="badge-title">CompTIA Security+</div>
-            <div class="badge-meta">CompTIA • 2025</div>
+        </div>
+      </section>
+
+      <!-- About (with your photo) -->
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <p>
+                Cybersecurity professional with 3+ years of cross-domain experience in automotive and IT security, skilled in threat and risk analysis, vulnerability management, and secure architecture design. Former Security &amp; Privacy Specialist at Continental Automotive, with hands-on expertise in aligning cybersecurity controls to automotive security standards. Holds a Master’s degree in Mechatronic and Cyber-Physical Systems from the Deggendorf Institute of Technology, where I developed a Digital Twin Based Intrusion Detection System (IDS) using Docker at Robert Bosch Stuttgart as part of my master’s thesis, providing a strong foundation in embedded systems security and Industry 4.0 resilience.
+              </p>
+              <p>
+                Enhanced my IT security expertise through a Cyber Security Bootcamp, completing a VAPT project using tools such as Nmap, Greenbone, Metasploit, and Autopsy, and earning CompTIA A+, Security+, and CySA+ certifications. Combines a background in software development with global experience across India, Japan, and Germany, and proficiency in Japanese language with developing German language skills, focused on designing resilient and compliant cybersecurity solutions.
+              </p>
+
+              <h3>Education</h3>
+              <ul class="about__list">
+                <li><strong>M.Eng. Mechatronic &amp; Cyber-Physical Systems</strong> — Deggendorf Institute of Technology (Campus Cham) • 03/2019–03/2021 • Grade: 1.9</li>
+                <li class="about__desc">Major: Cyber-physical systems, VR/AR &amp; IoT, Additive manufacturing • Case studies: Warehouse Automation, Digital Twinning, VR application.</li>
+                <li><strong>B.Eng. Electronics &amp; Telecommunication</strong> — Cummins College of Engineering for Women, Nagpur • 06/2011–05/2015</li>
+                <li class="about__desc">Major: Communications Engineering, Signals and Systems, Microprocessors and Computing Devices.</li>
+              </ul>
+
+              <h3>Skills</h3>
+              <ul class="about__list">
+                <li><strong>Cybersecurity Tools &amp; Techniques:</strong> VAPT, TARA, Vulnerability &amp; Attack Path Analysis, Security Architecture Design, Incident Response &amp; Forensic Analysis</li>
+                <li><strong>Tools:</strong> Nmap, Wireshark, Greenbone, Metasploit, Hydra, DVWA, Autopsy, ANSYS Medini Analyze, Visual Studio</li>
+                <li><strong>Frameworks/Standards/Compliance:</strong> ISO 27001, ISO/SAE 21434, NIST, GDPR, UN ECE R155</li>
+                <li><strong>Networking/Monitoring/System Security:</strong> TCP/IP, Firewalls, IDS/IPS, VPNs, Prometheus, Grafana, Docker, Secure System Configuration &amp; Hardening</li>
+                <li><strong>Development &amp; Automation:</strong> Kali Linux, Python automation, PowerShell, Shell/Bash</li>
+                <li><strong>Version Control &amp; PM:</strong> Git, GitLab, SVN, Jira</li>
+              </ul>
+
+              <h3>Languages</h3>
+              <p>English; Japanese (JLPT N3); German (B1 – in progress); Hindi; Marathi.</p>
+            </div>
+
+            <!-- Your portrait -->
+            <div class="about__photo-container">
+              <img class="about__photo" src="images/ruchi.jpg" alt="Ruchi Giradkar" loading="lazy" />
+            </div>
           </div>
-        </li>
-        <li class="badge">
-          <img src="assets/badges/aplus.png" alt="CompTIA A+ badge">
-          <div class="badge-info">
-            <div class="badge-title">CompTIA A+</div>
-            <div class="badge-meta">CompTIA • 2025</div>
+        </div>
+      </section>
+
+      <!-- Contact (ONLY LinkedIn & GitHub) -->
+      <section class="contact" id="contact">
+        <div class="row">
+          <h2>Contact</h2>
+          <div class="contact__info">
+            <p>
+              LinkedIn: <a href="https://www.linkedin.com/in/ruchi-giradkar" target="_blank" rel="noopener">in/ruchi-giradkar</a><br />
+              GitHub: <a href="https://github.com/RuchiGiradkar" target="_blank" rel="noopener">github.com/RuchiGiradkar</a>
+            </p>
           </div>
-        </li>
-        <li class="badge">
-          <img src="assets/badges/riscure-embedded.png" alt="Embedded Systems Security (Riscure Academy) badge">
-          <div class="badge-info">
-            <div class="badge-title">Embedded Systems Security</div>
-            <div class="badge-meta">Riscure Academy • 2023</div>
-          </div>
-        </li>
-      </ul>
-      <p class="muted">Badges are local images—no external links.</p>
-    </section>
+        </div>
+      </section>
+    </main>
 
-    <!-- Experience -->
-    <section class="section" id="experience">
-      <h2 class="section-title"><span>Experience</span></h2>
-
-      <article class="card">
-        <h3>Security &amp; Privacy Specialist — Continental Automotive Technologies GmbH</h3>
-        <div class="meta">Regensburg, Germany • Jul 2021 – Jan 2025</div>
-        <ul>
-          <li>Utilized ANSYS Medini Analyze to perform comprehensive Threat Analysis and Risk Assessments (TARA) in accordance with ISO/SAE 21434 and UN ECE R155, implementing targeted security controls to mitigate identified threats and vulnerabilities in embedded automotive systems.</li>
-          <li>Designed and validated security architectures and concept documentation to ensure compliance with customer requirements and international cybersecurity standards.</li>
-          <li>Collaborated with stakeholders, suppliers, and cross-functional teams to drive cybersecurity integration throughout the development lifecycle.</li>
+    <!-- Footer (GitHub + LinkedIn only; no Twitter; no star iframe) -->
+    <footer class="footer" role="contentinfo">
+      <div class="row">
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a href="https://github.com/RuchiGiradkar" title="GitHub Profile">
+              <img src="images/github.svg" class="footer__social-image" alt="GitHub">
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/ruchi-giradkar" title="LinkedIn Profile">
+              <img src="images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+            </a>
+          </li>
         </ul>
-      </article>
 
-      <article class="card">
-        <h3>Master Thesis Project — Robert Bosch GmbH</h3>
-        <div class="meta">Stuttgart, Germany • Jul 2020 – Dec 2020</div>
-        <ul>
-          <li>Designed and implemented a digital twin–based Intrusion Detection System (IDS) using Docker containerization to enhance real-time security monitoring, modularity, and threat visibility across Industry 4.0-connected environments.</li>
-          <li>Developed and validated detection mechanisms to identify and block malicious activities within industrial IoT networks.</li>
-          <li>Automated intrusion alert generation and incident response workflows through Shell and Python scripting.</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h3>Bilingual Assistant Application Developer — Fujitsu Consulting India</h3>
-        <div class="meta">Feb 2016 – Feb 2019</div>
-        <ul>
-          <li>Developed UI platforms for mobile applications and multi-channel user interactions.</li>
-          <li>Interpreted Japanese design and technical documentation to develop efficient, standards-compliant code.</li>
-          <li>Enhanced existing systems by adding new functionalities using JavaScript.</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h3>Trainee — NTT DATA</h3>
-        <div class="meta">Pune, India • Jun 2015 – Mar 2016</div>
-        <ul>
-          <li>Completed Java development training (OOP, application design fundamentals).</li>
-          <li>Underwent Japanese language training (JLPT N4 level).</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h3>Cyber Security Bootcamp</h3>
-        <div class="meta">2025</div>
-        <ul>
-          <li>Completed a 16-week program focused on IT fundamentals, advanced cybersecurity practices, and risk management frameworks (NIST, ISO, GDPR).</li>
-          <li>Conducted capstone Threat Modeling/Risk Analysis using Nmap, Metasploit, Hydra, Greenbone, DVWA, and Autopsy.</li>
-          <li>Performed full VAPT and delivered a forensic investigation report; earned CompTIA A+, Security+, and CySA+.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Education -->
-    <section class="section" id="education">
-      <h2 class="section-title"><span>Education</span></h2>
-      <article class="card">
-        <strong>M.Eng. in Mechatronic and Cyber-Physical Systems</strong> — Deggendorf Institute of Technology (Campus Cham) • 03/2019 – 03/2021 • Grade: 1.9
-        <div class="muted">Major: Cyber-physical systems, VR/AR &amp; IoT, Additive manufacturing • Case studies: Warehouse Automation, Digital Twinning, VR application.</div>
-      </article>
-      <article class="card">
-        <strong>B.Eng. in Electronics and Telecommunication</strong> — Cummins College of Engineering for Women, Nagpur • 06/2011 – 05/2015
-        <div class="muted">Major: Communications Engineering, Signals and Systems, Microprocessors and Computing Devices.</div>
-      </article>
-    </section>
-
-    <!-- Skills -->
-    <section class="section" id="skills">
-      <h2 class="section-title"><span>Skills</span></h2>
-      <div class="card">
-        <ul class="skills">
-          <li><strong>Cybersecurity Tools &amp; Techniques:</strong> VAPT, TARA, Vulnerability &amp; Attack Path Analysis, Security Architecture Design, Incident Response &amp; Forensic Analysis</li>
-          <li><strong>Tools:</strong> Nmap, Wireshark, Greenbone, Metasploit, Hydra, DVWA, Autopsy, ANSYS Medini Analyze, Visual Studio</li>
-          <li><strong>Frameworks / Standards / Compliance:</strong> ISO 27001, ISO/SAE 21434, NIST, GDPR, UN ECE R155</li>
-          <li><strong>Networking / Monitoring / System Security:</strong> TCP/IP, Firewalls, IDS/IPS, VPNs, Prometheus, Grafana, Docker, Secure System Configuration &amp; Hardening</li>
-          <li><strong>Development &amp; Automation:</strong> Kali Linux, Python automation, PowerShell, Shell/Bash</li>
-          <li><strong>Version Control &amp; PM:</strong> Git, GitLab, SVN, Jira</li>
-        </ul>
+        <!-- Clean copyright line -->
+        <p>© 2025 Ruchi Giradkar. All rights reserved.</p>
       </div>
-    </section>
+    </footer>
 
-    <!-- Languages -->
-    <section class="section" id="languages">
-      <h2 class="section-title"><span>Languages</span></h2>
-      <div class="card"><p>English; Japanese (JLPT N3); German (B1 – in progress); Hindi; Marathi.</p></div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <h2 class="section-title"><span>Contact</span></h2>
-      <div class="card">
-        <p>
-          Email: <a class="link" href="mailto:ruchigiradkar@gmail.com">ruchigiradkar@gmail.com</a><br />
-          Phone: <a class="link" href="tel:+4917657667613">+49 176 57666713</a><br />
-          LinkedIn: <a class="link" href="https://www.linkedin.com/in/ruchi-giradkar">in/ruchi-giradkar</a><br />
-          GitHub: <a class="link" href="https://github.com/RuchiGiradkar">github.com/RuchiGiradkar</a>
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer (dark like the reference) -->
-  <footer class="site-footer">
-    <div class="container foot">
-      <div class="socials">
-        <a href="https://twitter.com/" aria-label="Twitter" class="icon" title="Twitter">
-          <!-- inline SVG icon -->
-          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M22 5.8c-.7.3-1.5.6-2.3.7.8-.5 1.4-1.3 1.7-2.2-.8.5-1.7.9-2.6 1.1C18 4.6 17 4 15.9 4c-2.1 0-3.7 1.9-3.3 4-3-.1-5.7-1.7-7.5-4.1-.9 1.6-.4 3.8 1.2 4.8-.6 0-1.1-.2-1.6-.4 0 1.8 1.3 3.4 3.1 3.8-.5.1-1 .2-1.5.1.4 1.5 1.9 2.6 3.5 2.6-1.6 1.2-3.6 1.8-5.6 1.6 1.7 1.1 3.8 1.8 6 1.8 7.2 0 11.3-6.1 11-11.6.7-.5 1.3-1.2 1.7-2z"/></svg>
-        </a>
-        <a href="https://github.com/RuchiGiradkar" aria-label="GitHub" class="icon" title="GitHub">
-          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.6v-2c-3.4.8-4.2-1.5-4.2-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .8.1-.7.4-1.1.7-1.4-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.9 1.2 2 1.2 3.2 0 4.7-2.9 5.8-5.6 6.1.4.4.8 1 .8 2v3c0 .4.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/ruchi-giradkar" aria-label="LinkedIn" class="icon" title="LinkedIn">
-          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5a2.5 2.5 0 1 1 0-5c1.38 0 2.5 1.12 2.5 2.5zM4.5 8h-3v13h3V8zm7 .1h-2.9V21h3v-6.5c0-1.6.6-2.6 2-2.6 1.3 0 1.9.9 1.9 2.6V21h3v-6.9c0-3.7-2-5.3-4.6-5.3-2 0-3 .8-3.5 1.7V8.1z"/></svg>
-        </a>
-      </div>
-      <div class="copy">© 2025 — Portfolio styled after the referenced template</div>
-    </div>
-  </footer>
-
-</body>
+    <!-- Back to top button from template -->
+    <a href="#top" class="back-to-top" title="Back to Top" aria-label="Back to Top">
+      <img src="images/arrow-up.svg" alt="Back to Top" />
+    </a>
+  </body>
 </html>
