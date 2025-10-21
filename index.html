@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Uses the exact structure/classes from nisarhassan12/portfolio-template -->
+    <!-- Matches the exact structure/classes of nisarhassan12/portfolio-template -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ruchi Giradkar — Portfolio</title>
     <meta name="description" content="Portfolio of Ruchi Giradkar — Senior Cyber Security / Penetration Tester." />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Privacy headers (no external scripts) -->
+    <!-- CSP updated so the template's Google Fonts load (for the exact look) -->
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
       img-src 'self' data:;
-      style-src 'self' 'unsafe-inline';
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src 'self' https://fonts.gstatic.com data:;
       script-src 'self';
       object-src 'none';
       base-uri 'self';
@@ -24,7 +25,7 @@
   </head>
 
   <body>
-    <!-- Header / Nav (no name/brand on the left, like the demo) -->
+    <!-- Header / Nav (no brand/name on the left) -->
     <header class="header" role="banner" id="top">
       <div class="row">
         <nav class="nav" role="navigation">
@@ -36,7 +37,7 @@
           </ul>
         </nav>
 
-        <!-- Hero — matches template; NO email/phone, NO arrow -->
+        <!-- Hero (no phone, no email, no arrow) -->
         <div class="header__text-box row">
           <div class="header__text">
             <h1 class="heading-primary">
@@ -45,7 +46,7 @@
             <p>Senior Cyber Security / Penetration Tester</p>
             <p>Based in Regensburg, Bavaria, Germany.</p>
 
-            <!-- Only LinkedIn & GitHub buttons (template button styles) -->
+            <!-- Only LinkedIn & GitHub buttons (template styles) -->
             <a href="https://www.linkedin.com/in/ruchi-giradkar" class="btn btn--pink" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://github.com/RuchiGiradkar" class="btn btn--white" target="_blank" rel="noopener">GitHub</a>
           </div>
@@ -54,7 +55,7 @@
     </header>
 
     <main role="main">
-      <!-- Work (Experience) — template “work” layout -->
+      <!-- Work (Experience) -->
       <section class="work" id="work">
         <div class="row">
           <h2>Work</h2>
@@ -142,12 +143,12 @@
         </div>
       </section>
 
-      <!-- Certifications (template's Clients grid) -->
+      <!-- Certifications using the template's Clients grid -->
       <section class="client" id="clients">
         <div class="row">
           <h2>Clients</h2>
           <div class="client__logos">
-            <!-- Inline sizing ensures badges are visible even if originals are small/transparent -->
+            <!-- Sizing/padding ensures badges are visible and neat -->
             <figure class="client__logo-box">
               <img src="images/badges/csap.png" class="client__logo" alt="CSAP badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
               <figcaption>CompTIA Security Analytics Professional (CSAP) — 2025</figcaption>
@@ -165,14 +166,14 @@
               <figcaption>CompTIA A+ — 2025</figcaption>
             </figure>
             <figure class="client__logo-box">
-              <img src="images/badges/riscure-embedded.png" class="client__logo" alt="Riscure Embedded Systems Security badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
+              <img src="images/badges/riscure-embedded.png" class="client__logo" alt="Riscure badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
               <figcaption>Embedded Systems Security — Riscure Academy, 2023</figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <!-- About (with your photo on the right) -->
+      <!-- About (with your photo) -->
       <section class="about" id="about">
         <div class="row">
           <h2>About</h2>
@@ -214,7 +215,7 @@
         </div>
       </section>
 
-      <!-- Contact (ONLY LinkedIn & GitHub; no email/phone) -->
+      <!-- Contact (ONLY LinkedIn & GitHub) -->
       <section class="contact" id="contact">
         <div class="row">
           <h2>Contact</h2>
@@ -228,7 +229,7 @@
       </section>
     </main>
 
-    <!-- Footer — only GitHub + LinkedIn; clean copyright -->
+    <!-- Footer — only GitHub + LinkedIn -->
     <footer class="footer" role="contentinfo">
       <div class="row">
         <ul class="footer__social-links">
@@ -247,7 +248,7 @@
       </div>
     </footer>
 
-    <!-- Back-to-top button (as in the template) -->
+    <!-- Back-to-top button (template) -->
     <a href="#top" class="back-to-top" title="Back to Top" aria-label="Back to Top">
       <img src="images/arrow-up.svg" alt="Back to Top" />
     </a>
