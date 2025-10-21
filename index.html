@@ -1,180 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Exact classes from nisarhassan12/portfolio-template so styling matches -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ruchi Giradkar — Portfolio</title>
-    <meta name="description" content="Portfolio of Ruchi Giradkar — Senior Cyber Security / Penetration Tester." />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruchi Ghatkar | Cyber Security Specialist</title>
 
-    <!-- Allow template fonts (for identical look) -->
-    <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self';
-      img-src 'self' data:;
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-      font-src 'self' https://fonts.gstatic.com data:;
-      script-src 'self';
-      object-src 'none';
-      base-uri 'self';
-      frame-ancestors 'none';
-      upgrade-insecure-requests
-    ">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta name="referrer" content="no-referrer" />
+  <!-- Font (matches the template’s clean sans look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
-    <!-- tiny overrides: hide any hero arrow and ensure badges look good -->
-    <style>
-      .header__scroll-down, .header__chevron, .header__arrow { display:none !important; }
-      .client__logo { max-height:88px; object-fit:contain; background:#111; border-radius:8px; padding:6px; }
-      .nav__brand, .brand, .site-title { display:none !important; }
-    </style>
-  </head>
-
-  <body>
-    <!-- Header / Nav (no name on left) -->
-    <header class="header" role="banner" id="top">
-      <div class="row">
-        <nav class="nav" role="navigation">
-          <ul class="nav__items">
-            <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#clients" class="nav__link">Certifications</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Get in touch</a></li>
-          </ul>
-        </nav>
-
-        <!-- Hero (no phone/email/arrow) -->
-        <div class="header__text-box row">
-          <div class="header__text">
-            <h1 class="heading-primary"><span>Ruchi Giradkar</span></h1>
-            <p>Senior Cyber Security / Penetration Tester</p>
-            <p>Based in Regensburg, Bavaria, Germany.</p>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main role="main">
-      <!-- Work — text only + GitHub button -->
-      <section class="work" id="work">
-        <div class="row">
-          <h2>Work</h2>
-
-          <div class="work__boxes">
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Experience</h3>
-                <ul class="work__list">
-                  <li><strong>Security &amp; Privacy Specialist — Continental Automotive Technologies GmbH</strong> (Regensburg, Germany • Jul 2021 – Jan 2025): TARA with ANSYS Medini Analyze per ISO/SAE 21434 &amp; UN ECE R155; security architecture &amp; concepts; cross-functional integration.</li>
-                  <li><strong>Master Thesis Project — Robert Bosch GmbH</strong> (Stuttgart, Germany • Jul 2020 – Dec 2020): Digital twin–based IDS with Docker; detection mechanisms for IIoT; scripted alerting &amp; response.</li>
-                  <li><strong>Bilingual Assistant Application Developer — Fujitsu Consulting India</strong> (Feb 2016 – Feb 2019): UI platforms; implementing Japanese specs; JavaScript feature work.</li>
-                  <li><strong>Trainee — NTT DATA</strong> (Pune, India • Jun 2015 – Mar 2016): Java OOP training; Japanese language (JLPT N4).</li>
-                  <li><strong>Cyber Security Bootcamp</strong> (2025): VAPT + forensics; Nmap, Metasploit, Hydra, Greenbone, DVWA, Autopsy; frameworks NIST/ISO/GDPR; earned A+, Security+, CySA+.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Single GitHub button under Work -->
-          <div style="margin-top:18px">
-            <a href="https://github.com/RuchiGiradkar" class="btn btn--white" target="_blank" rel="noopener">View my GitHub</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Certifications — badges side-by-side + a single link below -->
-      <section class="client" id="clients">
-        <div class="row">
-          <h2>Certifications</h2>
-        </div>
-        <div class="row">
-          <div class="client__logos">
-            <figure class="client__logo-box">
-              <img src="images/badges/csap.png" class="client__logo" alt="CSAP badge" />
-              <figcaption>CompTIA Security Analytics Professional (CSAP) — 2025</figcaption>
-            </figure>
-            <figure class="client__logo-box">
-              <img src="images/badges/cysa.png" class="client__logo" alt="CySA+ badge" />
-              <figcaption>CompTIA CySA+ — 2025</figcaption>
-            </figure>
-            <figure class="client__logo-box">
-              <img src="images/badges/securityplus.png" class="client__logo" alt="Security+ badge" />
-              <figcaption>CompTIA Security+ — 2025</figcaption>
-            </figure>
-            <figure class="client__logo-box">
-              <img src="images/badges/aplus.png" class="client__logo" alt="A+ badge" />
-              <figcaption>CompTIA A+ — 2025</figcaption>
-            </figure>
-            <figure class="client__logo-box">
-              <img src="images/badges/riscure-embedded.png" class="client__logo" alt="Riscure Embedded Systems Security badge" />
-              <figcaption>Embedded Systems Security — Riscure Academy, 2023</figcaption>
-            </figure>
-          </div>
-
-          <!-- Certifications link (replace href with your folder/page) -->
-          <div style="margin-top:18px">
-            <a href="https://example.com/your-certificates" class="btn btn--pink" target="_blank" rel="noopener">View all certificates</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- About — one paragraph + photo + resume button -->
-      <section class="about" id="about">
-        <div class="row">
-          <h2>About</h2>
-          <div class="about__content">
-            <div class="about__text">
-              <p>
-                Cybersecurity professional with 3+ years across automotive &amp; IT security—threat/risk analysis (TARA), vulnerability management, and secure architecture. Master’s in Mechatronic &amp; Cyber-Physical Systems (DIT). Thesis at Robert Bosch built a Docker-based digital-twin IDS for Industry 4.0. Completed a Cyber Security Bootcamp (VAPT &amp; forensics) and earned CompTIA A+, Security+, and CySA+. Background in software development; experience across India, Japan, and Germany.
-              </p>
-
-              <a href="assets/Ruchi_Giradkar_Resume.pdf" class="btn btn--white" target="_blank" rel="noopener">Download Resume</a>
-            </div>
-
-            <div class="about__photo-container">
-              <img class="about__photo" src="images/ruchi.jpg" alt="Ruchi Giradkar" loading="lazy" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Get in touch — LinkedIn only -->
-      <section class="contact" id="contact">
-        <div class="row">
-          <h2>Get in touch</h2>
-          <div class="contact__info">
-            <p>
-              I’m happy to connect. Reach me on
-              <a href="https://www.linkedin.com/in/ruchi-giradkar" target="_blank" rel="noopener">LinkedIn</a>.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer — only GitHub + LinkedIn -->
-    <footer class="footer" role="contentinfo">
-      <div class="row">
-        <ul class="footer__social-links">
-          <li class="footer__social-link-item">
-            <a href="https://github.com/RuchiGiradkar" title="GitHub Profile">
-              <img src="images/github.svg" class="footer__social-image" alt="GitHub">
-            </a>
-          </li>
-          <li class="footer__social-link-item">
-            <a href="https://www.linkedin.com/in/ruchi-giradkar" title="LinkedIn Profile">
-              <img src="images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
-            </a>
-          </li>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- ===== Header / Hero ===== -->
+  <header class="header" id="home" role="banner" aria-label="Intro">
+    <nav class="nav" aria-label="Primary">
+      <div class="row nav__row">
+        <a class="logo" href="#home" aria-label="Home"> </a>
+        <ul class="nav__links">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
-        <p>© 2025 Ruchi Giradkar</p>
       </div>
-    </footer>
+    </nav>
 
-    <!-- Back to top (template) -->
-    <a href="#top" class="back-to-top" title="Back to Top" aria-label="Back to Top">
-      <img src="images/arrow-up.svg" alt="Back to Top" />
-    </a>
-  </body>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Ruchi Ghatkar</span>
+        </h1>
+
+        <p class="subline">
+          <span>A Cyber</span><br />
+          <span>Cyber Security Specialist</span>
+        </p>
+
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dummy anchors so the nav links don’t 404 while you wire the rest later -->
+  <main>
+    <section id="work"></section>
+    <section id="certifications"></section>
+    <section id="about"></section>
+    <section id="contact"></section>
+  </main>
+</body>
 </html>
