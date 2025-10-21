@@ -3,20 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ruchi Giradkar | Cyber Security Specialist</title>
+  <title>Ruchi Giradkar | Security & Privacy Specialist</title>
 
-  <!-- Font (matches the template’s clean sans look) -->
+  <!-- Font (matches the original template look) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="index.css" />
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="index.css?v=4" />
+
+  <!-- Inline fix (guarantees horizontal nav) -->
+  <style>
+    nav .row ul.nav__links.site-nav {
+      display: flex !important;
+      list-style: none !important;
+      padding-left: 0 !important;
+      margin: 0 !important;
+      gap: 32px;
+    }
+    nav .row ul.nav__links.site-nav > li { display: inline-flex; }
+  </style>
 </head>
 <body>
-  <!-- ===== Header / Hero ===== -->
+  <!-- ===== Header / Hero Section ===== -->
   <header class="header" id="home" role="banner" aria-label="Intro">
     <nav class="nav" aria-label="Primary">
       <div class="row nav__row">
         <a class="logo" href="#home" aria-label="Home"> </a>
-        <ul class="nav__links">
+        <ul class="nav__links site-nav">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
           <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
@@ -40,7 +53,7 @@
     </div>
   </header>
 
-  <!-- Dummy anchors so the nav links don’t 404 while you wire the rest later -->
+  <!-- Placeholder sections (you can fill these later) -->
   <main>
     <section id="work"></section>
     <section id="certifications"></section>
