@@ -5,30 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ruchi Giradkar | Security & Privacy Specialist</title>
 
-  <!-- Font (matches the original template look) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <!-- Preload self-hosted fonts like the original template -->
+  <link rel="preload" href="fonts/Calibre-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Calibre-Semibold.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Main CSS file -->
-  <link rel="stylesheet" href="index.css?v=4" />
-
-  <!-- Inline fix (guarantees horizontal nav) -->
-  <style>
-    nav .row ul.nav__links.site-nav {
-      display: flex !important;
-      list-style: none !important;
-      padding-left: 0 !important;
-      margin: 0 !important;
-      gap: 32px;
-    }
-    nav .row ul.nav__links.site-nav > li { display: inline-flex; }
-  </style>
+  <!-- Main CSS (add a cache-buster for GitHub Pages) -->
+  <link rel="stylesheet" href="index.css?v=7">
 </head>
 <body>
-  <!-- ===== Header / Hero Section ===== -->
+  <!-- ===== Header / Hero ===== -->
   <header class="header" id="home" role="banner" aria-label="Intro">
     <nav class="nav" aria-label="Primary">
       <div class="row nav__row">
-        <a class="logo" href="#home" aria-label="Home"> </a>
+        <a class="logo" href="#home" aria-label="Home"></a>
         <ul class="nav__links site-nav">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
           <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
@@ -40,20 +29,14 @@
 
     <div class="header__text-box row">
       <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Ruchi Giradkar</span>
-        </h1>
-
-        <p class="subline">
-          <span>Security & Privacy Specialist</span>
-        </p>
-
+        <h1 class="heading-primary"><span>Ruchi Giradkar</span></h1>
+        <p class="subline"><span>Security & Privacy Specialist</span></p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
   </header>
 
-  <!-- Placeholder sections (you can fill these later) -->
+  <!-- Anchors to avoid 404 while you build the rest -->
   <main>
     <section id="work"></section>
     <section id="certifications"></section>
