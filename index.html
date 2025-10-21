@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Matches the exact structure/classes of nisarhassan12/portfolio-template -->
+    <!-- Exact structure/classes from nisarhassan12/portfolio-template -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ruchi Giradkar — Portfolio</title>
     <meta name="description" content="Portfolio of Ruchi Giradkar — Senior Cyber Security / Penetration Tester." />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- CSP updated so the template's Google Fonts load (for the exact look) -->
+    <!-- Allow template fonts (for identical look) -->
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
       img-src 'self' data:;
@@ -22,10 +22,18 @@
     ">
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="no-referrer" />
+
+    <!-- Tiny overrides (no arrow; ensure badges show) -->
+    <style>
+      .header__scroll-down, .header__chevron, .header__arrow { display:none !important; }
+      .client__logo { max-height:80px; object-fit:contain; background:#111; border-radius:8px; padding:6px; }
+      /* no brand/name on the left – the template doesn’t add one, but if present, hide */
+      .nav__brand, .brand, .site-title { display:none !important; }
+    </style>
   </head>
 
   <body>
-    <!-- Header / Nav (no brand/name on the left) -->
+    <!-- Header / Nav (no name on the left) -->
     <header class="header" role="banner" id="top">
       <div class="row">
         <nav class="nav" role="navigation">
@@ -37,16 +45,12 @@
           </ul>
         </nav>
 
-        <!-- Hero (no phone, no email, no arrow) -->
+        <!-- Hero (NO phone, NO email, NO arrow) -->
         <div class="header__text-box row">
           <div class="header__text">
-            <h1 class="heading-primary">
-              <span>Ruchi Giradkar</span>
-            </h1>
+            <h1 class="heading-primary"><span>Ruchi Giradkar</span></h1>
             <p>Senior Cyber Security / Penetration Tester</p>
             <p>Based in Regensburg, Bavaria, Germany.</p>
-
-            <!-- Only LinkedIn & GitHub buttons (template styles) -->
             <a href="https://www.linkedin.com/in/ruchi-giradkar" class="btn btn--pink" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://github.com/RuchiGiradkar" class="btn btn--white" target="_blank" rel="noopener">GitHub</a>
           </div>
@@ -59,9 +63,7 @@
       <section class="work" id="work">
         <div class="row">
           <h2>Work</h2>
-
           <div class="work__boxes">
-            <!-- Continental -->
             <div class="work__box">
               <div class="work__text">
                 <h3>Security &amp; Privacy Specialist — Continental Automotive Technologies GmbH</h3>
@@ -77,7 +79,6 @@
               </div>
             </div>
 
-            <!-- Bosch thesis -->
             <div class="work__box">
               <div class="work__text">
                 <h3>Master Thesis Project — Robert Bosch GmbH</h3>
@@ -93,7 +94,6 @@
               </div>
             </div>
 
-            <!-- Fujitsu -->
             <div class="work__box">
               <div class="work__text">
                 <h3>Bilingual Assistant Application Developer — Fujitsu Consulting India</h3>
@@ -109,7 +109,6 @@
               </div>
             </div>
 
-            <!-- NTT DATA -->
             <div class="work__box">
               <div class="work__text">
                 <h3>Trainee — NTT DATA</h3>
@@ -124,7 +123,6 @@
               </div>
             </div>
 
-            <!-- Bootcamp -->
             <div class="work__box">
               <div class="work__text">
                 <h3>Cyber Security Bootcamp</h3>
@@ -143,37 +141,38 @@
         </div>
       </section>
 
-      <!-- Certifications using the template's Clients grid -->
+      <!-- Certifications (template's Clients grid) -->
       <section class="client" id="clients">
         <div class="row">
           <h2>Clients</h2>
+        </div>
+        <div class="row">
           <div class="client__logos">
-            <!-- Sizing/padding ensures badges are visible and neat -->
             <figure class="client__logo-box">
-              <img src="images/badges/csap.png" class="client__logo" alt="CSAP badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
+              <img src="images/badges/csap.png" class="client__logo" alt="CSAP badge" />
               <figcaption>CompTIA Security Analytics Professional (CSAP) — 2025</figcaption>
             </figure>
             <figure class="client__logo-box">
-              <img src="images/badges/cysa.png" class="client__logo" alt="CySA+ badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
+              <img src="images/badges/cysa.png" class="client__logo" alt="CySA+ badge" />
               <figcaption>CompTIA CySA+ — 2025</figcaption>
             </figure>
             <figure class="client__logo-box">
-              <img src="images/badges/securityplus.png" class="client__logo" alt="Security+ badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
+              <img src="images/badges/securityplus.png" class="client__logo" alt="Security+ badge" />
               <figcaption>CompTIA Security+ — 2025</figcaption>
             </figure>
             <figure class="client__logo-box">
-              <img src="images/badges/aplus.png" class="client__logo" alt="A+ badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
+              <img src="images/badges/aplus.png" class="client__logo" alt="A+ badge" />
               <figcaption>CompTIA A+ — 2025</figcaption>
             </figure>
             <figure class="client__logo-box">
-              <img src="images/badges/riscure-embedded.png" class="client__logo" alt="Riscure badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
+              <img src="images/badges/riscure-embedded.png" class="client__logo" alt="Riscure badge" />
               <figcaption>Embedded Systems Security — Riscure Academy, 2023</figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <!-- About (with your photo) -->
+      <!-- About -->
       <section class="about" id="about">
         <div class="row">
           <h2>About</h2>
