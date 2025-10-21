@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Inherits styles from the template -->
+    <!-- Uses the exact structure/classes from nisarhassan12/portfolio-template -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ruchi Giradkar — Portfolio</title>
     <meta name="description" content="Portfolio of Ruchi Giradkar — Senior Cyber Security / Penetration Tester." />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Privacy-first security headers (no third-party scripts) -->
+    <!-- Privacy headers (no external scripts) -->
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
       img-src 'self' data:;
@@ -24,28 +24,28 @@
   </head>
 
   <body>
-    <!-- Header / Nav (template nav with NO brand/name on the left) -->
+    <!-- Header / Nav (no name/brand on the left, like the demo) -->
     <header class="header" role="banner" id="top">
       <div class="row">
         <nav class="nav" role="navigation">
           <ul class="nav__items">
             <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#clients" class="nav__link">Certifications</a></li>
+            <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
             <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
         </nav>
 
-        <!-- Hero (same structure; NO email/phone; NO dropdown/arrow) -->
+        <!-- Hero — matches template; NO email/phone, NO arrow -->
         <div class="header__text-box row">
           <div class="header__text">
             <h1 class="heading-primary">
               <span>Ruchi Giradkar</span>
             </h1>
             <p>Senior Cyber Security / Penetration Tester</p>
-            <p>Regensburg, Bavaria, Germany</p>
+            <p>Based in Regensburg, Bavaria, Germany.</p>
 
-            <!-- Only LinkedIn & GitHub buttons -->
+            <!-- Only LinkedIn & GitHub buttons (template button styles) -->
             <a href="https://www.linkedin.com/in/ruchi-giradkar" class="btn btn--pink" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://github.com/RuchiGiradkar" class="btn btn--white" target="_blank" rel="noopener">GitHub</a>
           </div>
@@ -54,7 +54,7 @@
     </header>
 
     <main role="main">
-      <!-- Work (use template Work section to show your Experience) -->
+      <!-- Work (Experience) — template “work” layout -->
       <section class="work" id="work">
         <div class="row">
           <h2>Work</h2>
@@ -67,12 +67,12 @@
                 <p class="work__text--sub">Regensburg, Germany • Jul 2021 – Jan 2025</p>
                 <ul class="work__list">
                   <li>Performed TARA with ANSYS Medini Analyze per ISO/SAE 21434 &amp; UN ECE R155; implemented targeted controls for embedded automotive systems.</li>
-                  <li>Designed/validated security architectures and concept documents aligned to customer requirements and international standards.</li>
-                  <li>Collaborated with stakeholders/suppliers to integrate cybersecurity through the development lifecycle.</li>
+                  <li>Designed and validated security architectures and concept documents aligned with customer requirements and international standards.</li>
+                  <li>Collaborated with stakeholders and suppliers to integrate cybersecurity across the development lifecycle.</li>
                 </ul>
               </div>
               <div class="work__image-box">
-                <img src="images/header.jpg" class="work__image" alt="Continental" loading="lazy" />
+                <img src="images/header.jpg" class="work__image" alt="Continental Automotive" loading="lazy" />
               </div>
             </div>
 
@@ -142,36 +142,37 @@
         </div>
       </section>
 
-      <!-- Certifications (template "Clients" grid) -->
+      <!-- Certifications (template's Clients grid) -->
       <section class="client" id="clients">
         <div class="row">
-          <h2>Certifications</h2>
+          <h2>Clients</h2>
           <div class="client__logos">
+            <!-- Inline sizing ensures badges are visible even if originals are small/transparent -->
             <figure class="client__logo-box">
-              <img src="images/badges/csap.png" class="client__logo" alt="CompTIA Security Analytics Professional (CSAP) badge" />
+              <img src="images/badges/csap.png" class="client__logo" alt="CSAP badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
               <figcaption>CompTIA Security Analytics Professional (CSAP) — 2025</figcaption>
             </figure>
             <figure class="client__logo-box">
-              <img src="images/badges/cysa.png" class="client__logo" alt="CompTIA CySA+ badge" />
+              <img src="images/badges/cysa.png" class="client__logo" alt="CySA+ badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
               <figcaption>CompTIA CySA+ — 2025</figcaption>
             </figure>
             <figure class="client__logo-box">
-              <img src="images/badges/securityplus.png" class="client__logo" alt="CompTIA Security+ badge" />
+              <img src="images/badges/securityplus.png" class="client__logo" alt="Security+ badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
               <figcaption>CompTIA Security+ — 2025</figcaption>
             </figure>
             <figure class="client__logo-box">
-              <img src="images/badges/aplus.png" class="client__logo" alt="CompTIA A+ badge" />
+              <img src="images/badges/aplus.png" class="client__logo" alt="A+ badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
               <figcaption>CompTIA A+ — 2025</figcaption>
             </figure>
             <figure class="client__logo-box">
-              <img src="images/badges/riscure-embedded.png" class="client__logo" alt="Embedded Systems Security (Riscure Academy) badge" />
+              <img src="images/badges/riscure-embedded.png" class="client__logo" alt="Riscure Embedded Systems Security badge" style="max-height:80px;object-fit:contain;background:#111;border-radius:8px;padding:6px;" />
               <figcaption>Embedded Systems Security — Riscure Academy, 2023</figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <!-- About (with your photo) -->
+      <!-- About (with your photo on the right) -->
       <section class="about" id="about">
         <div class="row">
           <h2>About</h2>
@@ -206,7 +207,6 @@
               <p>English; Japanese (JLPT N3); German (B1 – in progress); Hindi; Marathi.</p>
             </div>
 
-            <!-- Your portrait -->
             <div class="about__photo-container">
               <img class="about__photo" src="images/ruchi.jpg" alt="Ruchi Giradkar" loading="lazy" />
             </div>
@@ -214,7 +214,7 @@
         </div>
       </section>
 
-      <!-- Contact (ONLY LinkedIn & GitHub) -->
+      <!-- Contact (ONLY LinkedIn & GitHub; no email/phone) -->
       <section class="contact" id="contact">
         <div class="row">
           <h2>Contact</h2>
@@ -228,7 +228,7 @@
       </section>
     </main>
 
-    <!-- Footer (GitHub + LinkedIn only; no Twitter; no star iframe) -->
+    <!-- Footer — only GitHub + LinkedIn; clean copyright -->
     <footer class="footer" role="contentinfo">
       <div class="row">
         <ul class="footer__social-links">
@@ -243,13 +243,11 @@
             </a>
           </li>
         </ul>
-
-        <!-- Clean copyright line -->
-        <p>© 2025 Ruchi Giradkar. All rights reserved.</p>
+        <p>© 2025 Ruchi Giradkar</p>
       </div>
     </footer>
 
-    <!-- Back to top button from template -->
+    <!-- Back-to-top button (as in the template) -->
     <a href="#top" class="back-to-top" title="Back to Top" aria-label="Back to Top">
       <img src="images/arrow-up.svg" alt="Back to Top" />
     </a>
