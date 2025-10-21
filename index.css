@@ -8,18 +8,50 @@ body {
   background: #0a0a0a;
 }
 
-/* Layout helpers (kept similar to template naming) */
+/* Layout helpers */
 .row { width: 90%; max-width: 1100px; margin: 0 auto; }
 
-/* ===== NAV ===== */
-.nav { position: absolute; top: 0; left: 0; width: 100%; z-index: 10; }
-.nav__row { display: flex; align-items: center; justify-content: flex-end; padding: 28px 0; }
-.nav__links { list-style: none; display: flex; gap: 32px; margin: 0; padding: 0; }
-.nav__link {
-  text-decoration: none; color: rgba(255,255,255,.85);
-  font-weight: 500; letter-spacing: .02em;
+/* ===== NAV (force horizontal + top-right like the template) ===== */
+.nav {
+  position: absolute;           /* sits on top of the hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
-.nav__link:hover, .nav__link:focus { color: #fff; }
+.nav__row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;    /* push links to the right */
+  padding: 28px 0;
+}
+
+/* Stronger selectors so they always win */
+ul.nav__links,
+.nav ul.nav__links {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;     /* horizontal */
+  flex-direction: row;
+  gap: 32px;
+}
+.nav__links > li,
+.nav__links > li.nav__item {
+  display: inline-flex;         /* each item sits side-by-side */
+  align-items: center;
+}
+.nav__links > li::marker { content: ""; }  /* kill bullets in some browsers */
+
+/* Links */
+.nav__link {
+  text-decoration: none;
+  color: rgba(255,255,255,.85);
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+.nav__link:hover,
+.nav__link:focus { color: #fff; }
 
 /* ===== HERO ===== */
 .header {
@@ -32,7 +64,6 @@ body {
     url("images/hero.jpg") center/cover no-repeat fixed;
 }
 
-/* Text block */
 .header__text-box { padding: 140px 0 120px; }
 .header__text { max-width: 780px; }
 
@@ -43,14 +74,13 @@ body {
   font-size: clamp(36px, 6vw, 72px);
   letter-spacing: .02em;
 }
-
 .subline {
   margin: 0 0 28px;
   font-size: clamp(16px, 2.2vw, 22px);
   color: rgba(255,255,255,.9);
 }
 
-/* Button (same vivid pink/red feel) */
+/* Button */
 .btn {
   display: inline-block;
   padding: 14px 28px;
@@ -64,12 +94,11 @@ body {
   color: #fff;
   box-shadow: 0 10px 30px rgba(255,71,87,.25);
 }
-.btn--pink:hover, .btn--pink:focus {
-  filter: brightness(1.08);
-}
+.btn--pink:hover,
+.btn--pink:focus { filter: brightness(1.08); }
 
-/* Small screens tweaks */
+/* Small screens */
 @media (max-width: 640px) {
   .nav__row { justify-content: center; }
-  .nav__links { gap: 22px; }
+  ul.nav__links { gap: 22px; }
 }
