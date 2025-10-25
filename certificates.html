@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruchi Giradkar | Certificates</title>
+
+  <!-- Same font + CSS as your main site -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Minimal header back to home -->
+  <header class="header" role="banner" id="top" style="min-height:auto;padding:30px 0;background:transparent;">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="index.html#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="index.html#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Use the Work layout classes so it looks native to the template -->
+    <section class="work" id="certs">
+      <div class="row">
+        <h2>Certificates</h2>
+
+        <div class="work__boxes">
+
+          <!-- Card 1 -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</h3>
+              <p>Fundamentals of identity, access, and security solutions across Microsoft services.</p>
+              <ul class="work__list">
+                <li>Identity &amp; Access</li>
+                <li>Microsoft Entra ID</li>
+                <li>Compliance &amp; Governance</li>
+              </ul>
+              <div class="work__links">
+                <!-- Update the href to your PDF file -->
+                <a href="./certs/SC-900_Ruchi-Giradkar.pdf" target="_blank" class="link__text">
+                  View PDF <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/certs/azure-sc900.png" class="work__image" alt="SC-900 badge" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Microsoft Certified: Azure Fundamentals</h3>
+              <p>Core Azure services, workloads, security, and pricing concepts.</p>
+              <ul class="work__list">
+                <li>Compute / Storage / Networking</li>
+                <li>RBAC &amp; Security</li>
+                <li>Cost Management</li>
+              </ul>
+              <div class="work__links">
+                <a href="./certs/Azure-Fundamentals_Ruchi-Giradkar.pdf" target="_blank" class="link__text">
+                  View PDF <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/certs/azure-fundamentals.png" class="work__image" alt="Azure Fundamentals badge" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>CompTIA Security+</h3>
+              <p>Vendor-neutral validation of core security skills across networks, apps, and operations.</p>
+              <ul class="work__list">
+                <li>Threats &amp; Vulnerabilities</li>
+                <li>Architecture &amp; Design</li>
+                <li>Incidents &amp; Ops</li>
+              </ul>
+              <div class="work__links">
+                <a href="./certs/CompTIA-SecurityPlus_Ruchi-Giradkar.pdf" target="_blank" class="link__text">
+                  View PDF <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/certs/comptia-securityplus.png" class="work__image" alt="Security+ badge" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Add more certificate cards by duplicating a work__box -->
+        </div>
+      </div>
+    </section>
+
+    <section class="client" id="badges">
+      <div class="row">
+        <h2>All Badges</h2>
+        <div class="client__logos">
+          <!-- Repeat your badges here too, if you want a gallery on this page -->
+          <img src="./images/certs/azure-sc900.png" class="client__logo" alt="SC-900" />
+          <img src="./images/certs/azure-fundamentals.png" class="client__logo" alt="Azure Fundamentals" />
+          <img src="./images/certs/ccna.png" class="client__logo" alt="CCNA" />
+          <img src="./images/certs/comptia-securityplus.png" class="client__logo" alt="Security+" />
+          <img src="./images/certs/elastic-analyst.png" class="client__logo" alt="Elastic Security Analyst" />
+          <img src="./images/certs/fortinet-nse.png" class="client__logo" alt="Fortinet NSE" />
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
