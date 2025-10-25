@@ -611,27 +611,4 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
-   /* ==== CERTIFICATION BADGES OVERRIDE ==== */
-/* Make certification badges full-color and larger (only in the Certifications section) */
-<style>
-  /* Make certification badges full-color and larger (only in the Certifications section) */
-  #certifications .client__logo{
-    filter: none !important;   /* remove grayscale */
-    opacity: 1 !important;     /* full color/contrast */
-    height: 200px;             /* adjust size as you like: 180–240px works well */
-    width: auto;
-    object-fit: contain;
-    transition: transform .2s ease, box-shadow .2s ease;
-  }
-  #certifications .client__logo:hover{
-    transform: scale(1.06);
-    box-shadow: 0 10px 24px rgba(0,0,0,.45);
-  }
-  /* keep the grid tidy */
-  #certifications .client__logos{
-    gap: 60px;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
 }
