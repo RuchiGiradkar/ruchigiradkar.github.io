@@ -613,6 +613,8 @@ body:not(.user-is-tabbing) a:focus {
     } 
    /* ==== CERTIFICATION BADGES OVERRIDE ==== */
 /* Make certification badges full-color and larger (only in the Certifications section) */
+<style>
+  /* Make certification badges full-color and larger (only in the Certifications section) */
   #certifications .client__logo{
     filter: none !important;   /* remove grayscale */
     opacity: 1 !important;     /* full color/contrast */
@@ -631,4 +633,5 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: center;
     align-items: center;
   }
+</style>
 }
