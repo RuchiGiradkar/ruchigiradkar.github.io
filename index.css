@@ -611,4 +611,27 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+    /* ==== CERTIFICATION BADGES OVERRIDE ==== */
+#certifications .client__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* space between badges */
+  margin-top: 40px;
+}
+
+#certifications .client__logo {
+  width: 160px;          /* adjust: try 180px or 200px if badges still small */
+  height: auto;
+  object-fit: contain;
+  opacity: 1;            /* show full color */
+  filter: none;          /* remove grayscale */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#certifications .client__logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
 }
