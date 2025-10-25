@@ -177,40 +177,48 @@
     <!-- ===================== /MY WORK ===================== -->
    <!-- ===================== CERTIFICATIONS (badges) ===================== -->
     <style>
-  /* Make certification badges full-color and larger (only in the Certifications section) */
-  #certifications .client__logo{
-    filter: none !important;   /* remove grayscale */
-    opacity: 1 !important;     /* full color/contrast */
-    height: 200px;             /* adjust size as you like: 180–240px works well */
-    width: auto;
-    object-fit: contain;
-    transition: transform .2s ease, box-shadow .2s ease;
+  /* ===== Override grayscale + size limits from template ===== */
+  #certifications .client__logo {
+    filter: none !important;         /* remove grayscale */
+    opacity: 1 !important;           /* full visibility */
+    width: auto !important;          /* prevent forced width */
+    height: auto !important;         /* show true image size */
+    max-width: none !important;      /* don't shrink the images */
+    max-height: none !important;     /* display original proportions */
+    object-fit: contain !important;  /* preserve aspect ratio */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: inline-block;
   }
-  #certifications .client__logo:hover{
-    transform: scale(1.06);
-    box-shadow: 0 10px 24px rgba(0,0,0,.45);
+
+  /* Optional: nice hover effect */
+  #certifications .client__logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
   }
-  /* keep the grid tidy */
-  #certifications .client__logos{
-    gap: 60px;
+
+  /* Adjust layout spacing */
+  #certifications .client__logos {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 60px; /* spacing between badges */
+    margin-top: 40px;
   }
 </style>
+
 <section class="client" id="certifications">
   <div class="row">
     <h2>Certifications</h2>
 
-    <!-- Re-using the template's client grid so badges sit side-by-side -->
     <div class="client__logos">
-      <!-- Put your badge images in /images/badges/ -->
       <img src="./images/badges/csap.png" class="client__logo" alt="CompTIA CSAP" />
       <img src="./images/badges/cysa.png" class="client__logo" alt="CompTIA CySA+" />
       <img src="./images/badges/securityplus.png" class="client__logo" alt="CompTIA Security+" />
       <img src="./images/badges/aplus.png" class="client__logo" alt="CompTIA A+" />
     </div>
 
-    <div style="margin-top:24px">
+    <div style="margin-top:24px; text-align:center;">
       <a href="certificates.html" class="btn btn--pink">View Certificates</a>
     </div>
   </div>
