@@ -8,11 +8,48 @@
   <!-- Same font + CSS as your main site -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css" />
+
+  <!-- Make badges full-color & comfortably large on this page -->
+  <style>
+    /* Card badge sizing (in the work__box layout) */
+    .work__image-box .work__image {
+      height: 200px;
+      width: auto;
+      object-fit: contain;
+      filter: none !important;
+      opacity: 1 !important;
+    }
+
+    /* Gallery badge overrides */
+    #all-badges .client__logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      margin-top: 24px;
+    }
+    #all-badges .client__logo {
+      height: 200px;
+      width: auto;
+      object-fit: contain;
+      filter: none !important;
+      opacity: 1 !important;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    #all-badges .client__logo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 24px rgba(0,0,0,.45);
+    }
+
+    /* Small spacing tweak so the header is compact here */
+    header.header { min-height: auto; padding: 28px 0; background: transparent; }
+  </style>
 </head>
 <body>
 
-  <!-- Minimal header back to home -->
-  <header class="header" role="banner" id="top" style="min-height:auto;padding:30px 0;background:transparent;">
+  <!-- Minimal header with nav back to the main sections -->
+  <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
@@ -26,94 +63,133 @@
   </header>
 
   <main role="main">
-
-    <!-- Use the Work layout classes so it looks native to the template -->
+    <!-- =============== Certificates as cards (template work__box layout) =============== -->
     <section class="work" id="certs">
       <div class="row">
         <h2>Certificates</h2>
 
         <div class="work__boxes">
 
-          <!-- Card 1 -->
+          <!-- CySA+ -->
           <div class="work__box">
             <div class="work__text">
-              <h3>Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</h3>
-              <p>Fundamentals of identity, access, and security solutions across Microsoft services.</p>
+              <h3>CompTIA Cybersecurity Analyst (CySA+)</h3>
+              <p>
+                Issuer: CompTIA<br/>
+                Credential ID: <strong>0GW03KY5VB1EYMKJ</strong>
+              </p>
               <ul class="work__list">
-                <li>Identity &amp; Access</li>
-                <li>Microsoft Entra ID</li>
-                <li>Compliance &amp; Governance</li>
+                <li>Threat detection &amp; response</li>
+                <li>Security analytics &amp; monitoring</li>
+                <li>Incident response workflows</li>
               </ul>
               <div class="work__links">
-                <!-- Update the href to your PDF file -->
-                <a href="./certs/SC-900_Ruchi-Giradkar.pdf" target="_blank" class="link__text">
-                  View PDF <span>&rarr;</span>
+                <a class="link__text" target="_blank" href="https://www.credly.com/badges/efa4350e-797c-4a68-9c71-2cfb777c0939">
+                  View Credential <span>&rarr;</span>
+                </a>
+                <!-- Replace the PDF filename with your actual file name in /certs/ -->
+                <a class="link__text" target="_blank" href="./certs/CompTIA_CySA_Ruchi_Giradkar.pdf">
+                  View Certificate (PDF) <span>&rarr;</span>
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/certs/azure-sc900.png" class="work__image" alt="SC-900 badge" loading="lazy" />
+              <img src="./images/badges/cysa.png" class="work__image" alt="CompTIA CySA+ badge" loading="lazy" />
             </div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Microsoft Certified: Azure Fundamentals</h3>
-              <p>Core Azure services, workloads, security, and pricing concepts.</p>
-              <ul class="work__list">
-                <li>Compute / Storage / Networking</li>
-                <li>RBAC &amp; Security</li>
-                <li>Cost Management</li>
-              </ul>
-              <div class="work__links">
-                <a href="./certs/Azure-Fundamentals_Ruchi-Giradkar.pdf" target="_blank" class="link__text">
-                  View PDF <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/certs/azure-fundamentals.png" class="work__image" alt="Azure Fundamentals badge" loading="lazy" />
-            </div>
-          </div>
-
-          <!-- Card 3 -->
+          <!-- Security+ -->
           <div class="work__box">
             <div class="work__text">
               <h3>CompTIA Security+</h3>
-              <p>Vendor-neutral validation of core security skills across networks, apps, and operations.</p>
+              <p>
+                Issuer: CompTIA<br/>
+                Credential ID: <strong>SJ4N6XKQ9NQ4KFWJ</strong>
+              </p>
               <ul class="work__list">
-                <li>Threats &amp; Vulnerabilities</li>
-                <li>Architecture &amp; Design</li>
-                <li>Incidents &amp; Ops</li>
+                <li>Secure architecture &amp; design</li>
+                <li>Vulnerabilities, threats &amp; attacks</li>
+                <li>Operations, incident handling &amp; GRC</li>
               </ul>
               <div class="work__links">
-                <a href="./certs/CompTIA-SecurityPlus_Ruchi-Giradkar.pdf" target="_blank" class="link__text">
-                  View PDF <span>&rarr;</span>
+                <a class="link__text" target="_blank" href="https://www.credly.com/badges/0d6a6458-4951-40d6-9d43-e96b053f551b">
+                  View Credential <span>&rarr;</span>
+                </a>
+                <a class="link__text" target="_blank" href="./certs/CompTIA_SecurityPlus_Ruchi_Giradkar.pdf">
+                  View Certificate (PDF) <span>&rarr;</span>
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/certs/comptia-securityplus.png" class="work__image" alt="Security+ badge" loading="lazy" />
+              <img src="./images/badges/securityplus.png" class="work__image" alt="CompTIA Security+ badge" loading="lazy" />
             </div>
           </div>
 
-          <!-- Add more certificate cards by duplicating a work__box -->
+          <!-- A+ -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>CompTIA A+</h3>
+              <p>
+                Issuer: CompTIA<br/>
+                Credential ID: <strong>SGEQ8VB50EVESNY2</strong>
+              </p>
+              <ul class="work__list">
+                <li>Hardware &amp; OS fundamentals</li>
+                <li>Troubleshooting &amp; support</li>
+                <li>Networking &amp; security basics</li>
+              </ul>
+              <div class="work__links">
+                <a class="link__text" target="_blank" href="https://www.credly.com/badges/3addedb8-49e3-409c-bdc5-00185b29c9c9">
+                  View Credential <span>&rarr;</span>
+                </a>
+                <a class="link__text" target="_blank" href="./certs/CompTIA_Aplus_Ruchi_Giradkar.pdf">
+                  View Certificate (PDF) <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/badges/aplus.png" class="work__image" alt="CompTIA A+ badge" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Riscure Academy -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Embedded Systems Security</h3>
+              <p>
+                Issuer: Riscure Academy
+              </p>
+              <ul class="work__list">
+                <li>Embedded threat models</li>
+                <li>Secure boot &amp; firmware protection</li>
+                <li>Hardware attack surfaces</li>
+              </ul>
+              <div class="work__links">
+                <!-- If you have a public link, place it here; otherwise keep only the PDF -->
+                <a class="link__text" target="_blank" href="./certs/Riscure_Embedded_Systems_Security_Ruchi_Giradkar.pdf">
+                  View Certificate (PDF) <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- Add your Riscure badge/logo to /images/badges/ and update filename -->
+              <img src="./images/badges/riscure.png" class="work__image" alt="Riscure Academy badge" loading="lazy" />
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section class="client" id="badges">
+    <!-- =============== Optional gallery of all badges (big, full-color) =============== -->
+    <section class="client" id="all-badges">
       <div class="row">
         <h2>All Badges</h2>
         <div class="client__logos">
-          <!-- Repeat your badges here too, if you want a gallery on this page -->
-          <img src="./images/certs/azure-sc900.png" class="client__logo" alt="SC-900" />
-          <img src="./images/certs/azure-fundamentals.png" class="client__logo" alt="Azure Fundamentals" />
-          <img src="./images/certs/ccna.png" class="client__logo" alt="CCNA" />
-          <img src="./images/certs/comptia-securityplus.png" class="client__logo" alt="Security+" />
-          <img src="./images/certs/elastic-analyst.png" class="client__logo" alt="Elastic Security Analyst" />
-          <img src="./images/certs/fortinet-nse.png" class="client__logo" alt="Fortinet NSE" />
+          <img src="./images/badges/cysa.png" class="client__logo" alt="CompTIA CySA+" />
+          <img src="./images/badges/securityplus.png" class="client__logo" alt="CompTIA Security+" />
+          <img src="./images/badges/aplus.png" class="client__logo" alt="CompTIA A+" />
+          <img src="./images/badges/riscure.png" class="client__logo" alt="Riscure Academy" />
         </div>
       </div>
     </section>
