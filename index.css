@@ -611,61 +611,27 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
-    /* ==== CERTIFICATION BADGES OVERRIDE ==== */
-/* ==== CERTIFICATION BADGES FULL-SIZE FIX ==== */
-#certifications {
-  padding: 100px 0;
-  background-color: #000; /* keep consistent with rest of template */
-}
-
-#certifications h2 {
-  font-size: 48px;
-  color: #fff;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-#certifications h2::after {
-  content: "";
-  display: block;
-  width: 90px;
-  height: 3px;
-  background: #ff4757;
-  margin-top: 10px;
-}
-
-/* Badge Container */
+   /* ==== CERTIFICATION BADGES OVERRIDE ==== */
 #certifications .client__logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 60px; /* spacing between badges */
-  margin-top: 50px;
+  gap: 40px; /* space between badges */
+  margin-top: 40px;
 }
 
-/* BADGES — restore full size, color, and clarity */
 #certifications .client__logo {
-  width: auto;
-  height: 200px;              /* set visible original badge height */
-  max-width: none;            /* prevent shrinking */
+  width: 160px;          /* adjust: try 180px or 200px if badges still small */
+  height: auto;
   object-fit: contain;
-  filter: none;               /* remove grayscale */
-  opacity: 1;                 /* ensure full visibility */
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  opacity: 1;            /* show full color */
+  filter: none;          /* remove grayscale */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #certifications .client__logo:hover {
-  transform: scale(1.07);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
 }
-
-/* Center the button */
-#certifications .btn {
-  display: inline-block;
-  margin-top: 50px;
-  font-size: 16px;
-  padding: 12px 28px;
-}
-
 }
