@@ -612,26 +612,23 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
    /* ==== CERTIFICATION BADGES OVERRIDE ==== */
-#certifications .client__logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 40px; /* space between badges */
-  margin-top: 40px;
-}
-
-#certifications .client__logo {
-  width: 160px;          /* adjust: try 180px or 200px if badges still small */
-  height: auto;
-  object-fit: contain;
-  opacity: 1;            /* show full color */
-  filter: none;          /* remove grayscale */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#certifications .client__logo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
-}
+/* Make certification badges full-color and larger (only in the Certifications section) */
+  #certifications .client__logo{
+    filter: none !important;   /* remove grayscale */
+    opacity: 1 !important;     /* full color/contrast */
+    height: 200px;             /* adjust size as you like: 180–240px works well */
+    width: auto;
+    object-fit: contain;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  #certifications .client__logo:hover{
+    transform: scale(1.06);
+    box-shadow: 0 10px 24px rgba(0,0,0,.45);
+  }
+  /* keep the grid tidy */
+  #certifications .client__logos{
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+  }
 }
