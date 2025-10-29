@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruchi Giradkar | Academic Records</title>
+
+  <!-- fonts + main stylesheet (same as the rest of your site) -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+    /* ============== Page-only tweaks for records ============== */
+
+    /* Remove hero from this standalone page */
+    header.header{
+      background: transparent !important;
+      background-image: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      background-attachment: initial !important;
+      margin: 0;
+      padding: 0;
+    }
+    .nav{ justify-content:flex-end; padding:12px 0; }
+
+    /* Section spacing */
+    .work#records{ padding-top:16px; }
+    #records h2{ margin-top:0; }
+
+    /* Two-column education rows */
+    .edu-row{
+      display:flex;
+      align-items:flex-start;
+      gap:56px;
+      margin-bottom:72px;
+    }
+
+    /* Widen text column so lines are longer -> fewer lines -> shorter height */
+    @media (min-width:1024px){
+      .edu-text{ flex:0 0 60%; max-width:820px; }
+      .edu-figure{ flex:0 0 40%; }
+    }
+    @media (min-width:1400px){
+      .edu-text{ flex-basis:62%; max-width:860px; }
+      .edu-figure{ flex-basis:38%; }
+    }
+
+    /* Mobile/tablet stacks */
+    @media (max-width:1023.98px){
+      .edu-row{ flex-direction:column; }
+      .edu-text, .edu-figure{ flex:1 1 auto; max-width:none; }
+    }
+
+    /* Keep image crisp, but let text width control total height balance */
+    .edu-figure img{
+      width:100%;
+      height:auto;
+      display:block;
+      object-fit:contain;
+    }
+
+    /* -------- Full justification for clean left & right edges -------- */
+    .edu-text p{
+      margin:10px 0;
+      line-height:1.65;
+      text-align:justify;
+      text-justify:inter-word;
+      text-align-last:left;   /* neat last line */
+      hyphens:auto;           /* better word breaks */
+    }
+    .edu-text ul{
+      padding-left:1.3rem;
+      margin:10px 0 0;
+    }
+    .edu-text li{
+      margin:6px 0;
+      line-height:1.55;
+      text-align:justify;
+      text-justify:inter-word;
+      text-align-last:left;
+      hyphens:auto;
+    }
+
+    /* Little emphasis helpers that match your site */
+    .label{ font-weight:600; }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="index.html#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="index.html#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main role="main">
+    <section class="work" id="records">
+      <div class="row">
+        <h2>Academic Records</h2>
+
+        <!-- ========== Master of Engineering ========== -->
+        <div class="edu-row">
+          <div class="edu-text">
+            <h3>Master of Engineering (M.Eng.)<br />Deggendorf Institute of Technology (DIT), <br />Campus Cham,Germany</h3>
+
+            <p><span class="label">Program:</span> Mechatronic and Cyber-Physical Systems</p>
+            <p><span class="label">Specialization:</span> Cybersecurity and Industrial IT</p>
+            <p><span class="label">Grade:</span> 1.9 (Good)</p>
+
+            <p><span class="label">Program Emphasis:</span> Focused on the development and secure operation of intelligent, connected systems in the context of Industry 4.0. The program integrates mechanical, electrical, and computer engineering disciplines with strong emphasis on cybersecurity, automation, and digital transformation in industrial environments.</p>
+
+            <p><span class="label">Thesis:</span> Digital Twin-based Intrusion Detection System for Real-time Malicious Process Detection<br>
+               <span class="label">Thesis Conducted at:</span> Robert Bosch GmbH</p>
+
+            <p class="label">Major Subjects and Coursework:</p>
+            <ul>
+              <li>Cyber-Physical Systems Design and Secure System Architecture</li>
+              <li>Advanced Robotics and Autonomous Systems</li>
+              <li>Functional Safety, Network Security, and Industrial Automation</li>
+              <li>Virtual &amp; Augmented Reality, Human-Machine Interfaces, Additive Manufacturing</li>
+              <li>Simulation, Modeling, and Applied Research Methods</li>
+            </ul>
+          </div>
+
+          <figure class="edu-figure">
+            <!-- Replace with your actual PNG path -->
+            <img src="./images/records/masters_record.png" alt="M.Eng. Graduation Certificate (DIT)" />
+          </figure>
+        </div>
+
+        <!-- ========== Bachelor of Engineering ========== -->
+        <div class="edu-row">
+          <div class="edu-text">
+            <h3>Bachelor of Engineering (B.E.)<br />Cummins College of Engineering (Nagpur University)<br />Nagpur, India</h3>
+
+            <p><span class="label">Program:</span> Electronics and Telecommunication Engineering</p>
+            <p><span class="label">Grade:</span> First Division</p>
+
+            <p><span class="label">Program Emphasis:</span> Specialization within the broader field of electronics, focusing on the design and development of electronic devices and telecommunication systems that enable modern communication and connectivity. The program provides a strong foundation in electronics, embedded systems, signal processing, and network communication.</p>
+
+            <p class="label">Key Areas:</p>
+            <ul>
+              <li>Embedded Systems, Communications, and Networks</li>
+              <li>Applied Electronics and Systems Integration</li>
+              <li>Signal Processing, Digital and Analog Circuits, Control Systems</li>
+            </ul>
+
+            <p class="label">Projects:</p>
+            <ul>
+              <li>Applied electronics and system integration focusing on communication and embedded solutions</li>
+            </ul>
+          </div>
+
+          <figure class="edu-figure">
+            <!-- Replace with your actual PNG path -->
+            <img src="./images/records/bachelors_record.png" alt="B.E. Degree Certificate (Nagpur University)" />
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+<footer role="contentinfo" class="footer">
+  <div class="row">
+    <ul class="footer__social-links">
+      <li class="footer__social-link-item">
+        <a href="https://github.com/RuchiGiradkar" title="GitHub Profile" target="_blank">
+          <img src="./images/github.svg" class="footer__social-image" alt="GitHub">
+        </a>
+      </li>
+      <li class="footer__social-link-item">
+        <a href="https://www.linkedin.com/in/ruchi-giradkar/" title="LinkedIn Profile" target="_blank">
+          <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      &copy; 2025 — Designed &amp; Developed by <strong>Ruchi Giradkar</strong>.
+    </p>
+  </div>
+</footer>
+
+<!-- ===== Back to Top Button (Pink Circular Arrow) ===== -->
+<a href="#top" class="back-to-top" title="Back to Top">
+  <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+</a>
+
+<!-- ===== JavaScript for Back-to-Top Functionality ===== -->
+<script>
+  // Show or hide the back-to-top button when scrolling
+  const backToTopButton = document.querySelector(".back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTopButton.classList.add("show");
+    } else {
+      backToTopButton.classList.remove("show");
+    }
+  });
+</script>
+
+<!-- ===== Existing Template JS ===== -->
+<script src="./index.js"></script>
+
+<!-- ===== Optional CSS (Ensures the pink arrow appears correctly) ===== -->
+<style>
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff3366;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .back-to-top__image {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* white arrow */
+  }
+
+  .back-to-top:hover {
+    background-color: #e32e5d;
+    transform: translateY(-3px);
+  }
+</style>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruchi Giradkar | Cyber Security Specialist</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <!-- Global stylesheet -->
+  <link rel="stylesheet" href="index.css" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PSF16HS56"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8PSF16HS56');
+</script>
+</head>
+<body>
+
+  <!-- ===================== HEADER / HERO ===================== -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary"><span>Ruchi Giradkar</span></h1>
+        <p>Security &amp; Privacy Specialist</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== LOCAL LAYOUT + JUSTIFICATION (scoped) ===================== -->
+  <style>
+    /* ---------- Work section layout ---------- */
+    #work .work__boxes{ display:flex; flex-direction:column; gap:40px; }
+    #work .work__box{ display:flex; align-items:center; gap:48px; }
+    #work .work__box:not(:last-child){ margin-bottom:10rem; }
+
+    @media (min-width:1024px){
+      #work .work__text{ flex:0 0 40%; max-width:40%; }
+      #work .work__image-box{
+        flex:1 1 60%;
+        margin-left:6rem;
+        min-width:520px;
+        display:flex; align-items:center;
+      }
+    }
+    @media (min-width:1400px){ #work .work__image-box{ min-width:560px; } }
+    @media (max-width:1023.98px){
+      #work .work__box{ flex-direction:column; }
+      #work .work__text, #work .work__image-box{ flex:1 1 auto; min-width:0; margin-left:0; }
+      #work .work__box:not(:last-child){ margin-bottom:6rem; }
+    }
+
+    #work .work__image{ width:100%; height:auto; display:block; object-fit:cover; border-radius:0; }
+    #work .work__list{ list-style:disc outside; padding-left:1.4rem; margin-top:14px; margin-bottom: var(--gutter-normal); }
+    #work .work__list li{ margin:6px 0; line-height:1.6; }
+
+    /* ---------- Paragraph rhythm + full justification ---------- */
+    #work .work__text p{
+      line-height:1.7;
+      margin-bottom:12px;
+      text-align: justify;
+      text-justify: inter-word;
+      text-align-last: left;     /* keep last line neat */
+      hyphens: auto;             /* better word breaks for even edges */
+    }
+
+    /* ---------- Certifications tweaks ---------- */
+    #certifications .client__logo{
+      filter:none !important; opacity:1 !important; height:200px; width:auto;
+      object-fit:contain; transition:transform .2s ease, box-shadow .2s ease;
+    }
+    #certifications .client__logo:hover{ transform:scale(1.06); box-shadow:0 10px 24px rgba(0,0,0,.45); }
+    #certifications .client__logos{ gap:60px; justify-content:center; align-items:center; }
+
+    /* ---------- About section (desktop is justified already) ---------- */
+    #about { padding-top: var(--gutter-medium); }
+    #about h2 { margin-bottom: var(--gutter-normal); }
+    #about .about__content {
+      display: grid; grid-template-columns: 48% 52%;
+      column-gap: 40px; align-items: start; margin-top: 0;
+    }
+    #about .about__photo-container { align-self: start; display:flex; justify-content:center; }
+    #about .about__photo { width:100%; max-width:600px; height:auto; object-fit:contain; margin:0; border-radius:0; display:block; }
+    #about .about__text {
+      align-self: start; margin-top:-4px; padding-top:0;
+      font-size:1.8rem; line-height:1.85;
+      text-align: justify; text-justify: inter-word; text-align-last: left; hyphens:auto;
+    }
+    #about .about__text p:first-of-type { margin-top:0; }
+    #about .about__text p { margin-bottom:1.6rem; }
+    #about .btn { margin-top:1rem; }
+
+    @media (max-width:1023.98px){
+      #about { padding-top: var(--gutter-normal); }
+      #about .about__content { display:flex; flex-direction:column; gap:28px; }
+      #about .about__photo { max-width:460px; }
+      /* On narrow screens, left-align for readability */
+      #about .about__text { text-align:left; text-justify:auto; text-align-last:auto; }
+    }
+
+    /* ---------- Contact paragraph justification ---------- */
+    #contact .contact__info p{
+      text-align: justify;
+      text-justify: inter-word;
+      text-align-last: left;
+      hyphens: auto;
+      line-height: 1.8;
+    }
+  </style>
+  <!-- ===================== /LOCAL LAYOUT + JUSTIFICATION ===================== -->
+
+  <!-- ===================== MAIN ===================== -->
+  <main role="main">
+
+    <!-- ===================== MY WORK ===================== -->
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+
+        <div class="work__boxes">
+
+          <!-- 1) Cybersecurity Bootcamp Project -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Cybersecurity Bootcamp Project</h3>
+              <p>
+                A full-scale Vulnerability Assessment, Penetration Testing (VAPT), and Forensic Investigation conducted during a
+                16-week Cybersecurity Bootcamp. The assessment uncovered <strong>58 vulnerabilities</strong> (16 high-risk) and
+                recovered <strong>5 forensic artifacts</strong> from a simulated enterprise lab.
+              </p>
+              <ul class="work__list">
+                <li>Kali Linux</li><li>Nmap</li><li>Metasploit</li><li>Hydra</li>
+                <li>Greenbone (OpenVAS)</li><li>DVWA</li><li>Autopsy</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/RuchiGiradkar/Capstone-Project-VAPT-Forensic" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/RuchiGiradkar/Capstone-Project-VAPT-Forensic" target="_blank" title="View Source Code">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Four_Phase_Testing.png" class="work__image" alt="Bootcamp VAPT project preview" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- 2) Master Thesis — Digital Twin IDS -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Master Thesis<br />Digital Twin-based Intrusion Detection System (IDS),<br />Robert Bosch GmbH</h3><br />Loction: Stuttgart,Germany
+              <p>
+                Designed and implemented a Digital Twin-based IDS during my Master’s thesis at Robert Bosch GmbH,
+                enhancing real-time threat visibility and cyber resilience for Industry 4.0 environments using Docker and Python automation.
+              </p>
+              <ul class="work__list">
+                <li>Docker</li><li>Python</li><li>Shell Scripting</li>
+                <li>Linux</li><li>Network Monitoring</li><li>Industrial IoT</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/RuchiGiradkar/Digital-Twin-IDS" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/RuchiGiradkar/Digital-Twin-IDS" target="_blank" title="View Source Code">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Docker_Containers_Implemenation.png" class="work__image" alt="Digital Twin IDS thesis preview" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- 3) Continental Automotive -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Security &amp; Privacy Specialist,<br />Continental Automotive Technologies GmbH</h3><br /> Loction: Regensburg,Germany
+              <p>
+                Performed Threat Analysis and Risk Assessment (TARA) aligned with ISO/SAE 21434 and UN ECE R155,
+                designed secure architectures, and coordinated risk mitigation for embedded automotive platforms.
+              </p>
+              <ul class="work__list">
+                <li>ANSYS Medini Analyze</li>
+                <li>ISO/SAE 21434 &amp; UN ECE R155 Compliance</li>
+                <li>Threat Modeling &amp; Risk Mitigation</li>
+                <li>Security Architecture Design</li>
+                <li>Stakeholder Collaboration &amp; Documentation</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Continental_Photo.jpeg" class="work__image" alt="Continental Automotive cybersecurity concept" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- 4) Fujitsu Consulting India -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Bilingual Assistant Application Developer,<br />Fujitsu Consulting India</h3><br />Loction: Pune,India
+              <p>
+                Built multi-channel UI features and mobile interfaces; translated Japanese technical documentation into performant,
+                standards-compliant JavaScript and improved usability for enterprise clients.
+              </p>
+              <ul class="work__list">
+                <li>JavaScript / HTML / CSS</li>
+                <li>UI &amp; UX Optimization</li>
+                <li>Japanese ↔ English Technical Translation</li>
+                <li>Agile Development &amp; Collaboration</li>
+                <li>Performance Tuning &amp; Testing</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Fujitsu_photo.jpg" class="work__image" alt="Fujitsu UI development work" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- 5) NTT DATA -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Trainee,<br />NTT DATA</h3><br />Loction: Pune,India
+              <p>
+                Completed professional Java development training focused on object-oriented programming and application design fundamentals,
+                plus Japanese language training (JLPT N4) for cross-border collaboration.
+              </p>
+              <ul class="work__list">
+                <li>Java &amp; Object-Oriented Programming</li>
+                <li>Software Design Fundamentals</li>
+                <li>Project Lifecycle Understanding</li>
+                <li>Japanese Language (JLPT N4)</li>
+                <li>Cross-Cultural Team Communication</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Nttdata_Photo.jpg" class="work__image" alt="NTT DATA trainee program" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ===================== /MY WORK ===================== -->
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="client" id="certifications">
+      <div class="row">
+        <h2>Certifications</h2>
+        <div class="client__logos">
+          <img src="./images/badges/csap_black.png" class="client__logo" alt="CompTIA CSAP" />
+          <img src="./images/badges/cysa.png" class="client__logo" alt="CompTIA CySA+" />
+          <img src="./images/badges/securityplus.png" class="client__logo" alt="CompTIA Security+" />
+          <img src="./images/badges/aplus.png" class="client__logo" alt="CompTIA A+" />
+        </div>
+        <div style="margin-top:24px">
+          <a href="certificates.html" class="btn btn--pink">View Certificates</a>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== /CERTIFICATIONS ===================== -->
+
+<!-- ===== SKILLS SECTION ===== -->
+<!-- New Skills Section -->
+<section class="skills" id="skills">
+  <div class="row">
+    <h2>Skills</h2>
+    <div class="skills-text">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li><strong>Cybersecurity Operations & Threat Management:</strong> Threat Analysis & Risk Assessment (TARA), STRIDE, VAPT, Security Architecture, Digital Forensics</li>
+        <li><strong>Security Tools & Platforms:</strong> Nmap, Wireshark, Greenbone (OpenVAS), Metasploit, Hydra, Autopsy, Tcpdump, ANSYS Medini Analyze</li>
+        <li><strong>Security Frameworks & Standards:</strong> NIST, MITRE ATT&CK, ISO/SAE 21434, ISO 27001, GDPR, OWASP Top 10, UN ECE R155</li>
+        <li><strong>Network & System Security:</strong> Firewalls, IDS/IPS, VPNs, TCP/IP, Prometheus, Grafana, Docker Security</li>
+        <li><strong>Development & Automation:</strong> Python, PowerShell, Shell/Bash, Detection & Response Automation, Kali Linux</li>
+        <li><strong>Version Control & Project Management:</strong> Git, GitLab, SVN, Jira, Stakeholder Communication, Security Workshops</li>
+        <li><strong>Consulting & Collaboration:</strong> Stakeholder Communication, Security Workshops & Training, Technical Documentation, Cross-functional Team Coordination, Risk Mitigation Planning</li>
+      </ul>
+      <br />
+      <h3>Languages</h3>
+      <ul>
+        <li>English (Fluent)</li>
+        <li>German (Level B1 – in progress)</li>
+        <li>Japanese (Level – JLPT N3)</li>
+        <li>Hindi</li>
+        <li>Marathi</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <!-- ===================== ABOUT (Perfect Top Alignment) ===================== -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/ruchi_profile.jpg" alt="Ruchi Giradkar" />
+          </div>
+
+          <div class="about__text">
+            <p>
+              Cybersecurity professional with <strong>3+ years of experience</strong> across automotive, industrial, and IT domains,
+              specializing in <strong>threat analysis</strong>, <strong>vulnerability assessment</strong>, and
+              <strong>secure system design</strong>. Former Security and Privacy Specialist at Continental Automotive, where I conducted
+              <strong>TARA</strong> aligned with <strong>ISO/SAE 21434</strong> and implemented security controls that reduced threats and
+              vulnerabilities in embedded systems.
+            </p>
+
+            <p>
+              Master’s graduate from Deggendorf Institute of Technology, where I developed a <strong>Digital Twin–based Intrusion Detection
+              System</strong> for real-time malicious process detection during my thesis at Robert Bosch. I hold a Bachelor’s in
+              Electronics and Telecommunication Engineering from Cummins College of Engineering (Nagpur University).
+            </p>
+
+            <p>
+              Strengthened IT cybersecurity expertise through a <strong>Cybersecurity Bootcamp</strong>, completing a VAPT and forensic project
+              using Nmap, Greenbone, Metasploit, and Autopsy that uncovered 58 vulnerabilities (16 high risk) and recovered 5 forensic
+              artifacts for remediation.
+            </p>
+
+            <p>
+              Certified in <strong>CompTIA CySA+</strong>, <strong>Security+</strong>, and <strong>A+</strong>; experienced across India, Japan,
+              and Germany; fluent in Japanese and developing German skills. I aim to apply my expertise to deliver innovative cybersecurity
+              solutions and strengthen overall resilience.
+            </p>
+
+            <a href="records.html" class="btn btn--pink">View Academic Records</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== /ABOUT ===================== -->
+        
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            I am always open to connecting with professionals to discuss potential opportunities,
+            exchange ideas, or explore areas of collaboration. If you would like to get in touch,
+            please reach out through my LinkedIn profile using the link below.
+          </p>
+          
+           <a href="https://www.linkedin.com/in/ruchi-giradkar/" class="btn btn--pink">Visit my LinkedIn</a>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== /CONTACT ===================== -->
+    <!-- ===================== FOOTER ===================== -->
+<!-- ===================== FOOTER ===================== -->
+<footer role="contentinfo" class="footer">
+  <div class="row">
+    <ul class="footer__social-links">
+      <li class="footer__social-link-item">
+        <a href="https://github.com/RuchiGiradkar" title="GitHub Profile" target="_blank">
+          <img src="./images/github.svg" class="footer__social-image" alt="GitHub">
+        </a>
+      </li>
+      <li class="footer__social-link-item">
+        <a href="https://www.linkedin.com/in/ruchi-giradkar/" title="LinkedIn Profile" target="_blank">
+          <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      &copy; 2025 — Designed &amp; Developed by <strong>Ruchi Giradkar</strong>.
+    </p>
+  </div>
+</footer>
+
+<!-- ===== Back to Top Button (Pink Circular Arrow) ===== -->
+<a href="#top" class="back-to-top" title="Back to Top">
+  <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+</a>
+
+<!-- ===== JavaScript for Back-to-Top Functionality ===== -->
+<script>
+  // Show or hide the back-to-top button when scrolling
+  const backToTopButton = document.querySelector(".back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTopButton.classList.add("show");
+    } else {
+      backToTopButton.classList.remove("show");
+    }
+  });
+</script>
+
+<!-- ===== Existing Template JS ===== -->
+<script src="./index.js"></script>
+
+<!-- ===== Optional CSS (Ensures the pink arrow appears correctly) ===== -->
+<style>
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff3366;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .back-to-top__image {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* white arrow */
+  }
+
+  .back-to-top:hover {
+    background-color: #e32e5d;
+    transform: translateY(-3px);
+  }
+</style>
+ <!-- ===================== FOOTER ===================== -->
+
+    
+  </main>
+</body>
+</html>

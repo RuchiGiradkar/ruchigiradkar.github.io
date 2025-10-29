@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruchi Giradkar | Certificates</title>
+
+  <!-- fonts + main stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+    /* ===== Page-only fixes (keep your site classes) ===== */
+
+    /* Kill hero styles from index.css on this page */
+    header.header{
+      background: transparent !important;
+      background-image: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      background-attachment: initial !important;
+      margin: 0;
+      padding: 0; /* we'll control spacing via .nav and the section */
+    }
+
+    /* Make the top navbar compact */
+    .nav{
+      justify-content: flex-end;       /* keep items right-aligned */
+      padding: 12px 0;                 /* smaller than global 3rem */
+    }
+
+    /* Start the content right after the nav */
+    .work#certs{
+      padding-top: 16px;               /* tiny breathing room */
+    }
+    #certs h2{
+      margin-top: 0;
+    }
+
+    /* ====== Reduce large vertical gaps between certificate rows ======
+       The template gives .work__box a big bottom margin.
+       We remove it here and set a compact, consistent spacing. */
+    #certs .work__box{ 
+      margin-bottom: 0 !important;     /* neutralize global spacing */
+      align-items: flex-start;         /* align text block with top of image */
+      gap: 40px;                       /* tidy column gap */
+    }
+    #certs .work__box:not(:last-child){
+      margin-bottom: 48px !important;  /* ↓ tighten space between rows */
+    }
+
+    /* Wider text column so bullets wrap nicely */
+    @media (min-width: 901px){
+      #certs .work__text{ flex:0 0 38%; max-width:38%; }
+      #certs .work__image-box{ flex:1; margin-left:8rem; }
+      /* CSAP row only (5th .work__box): a touch wider for better balance */
+      #certs .work__box:nth-of-type(5) .work__text{ flex:0 0 42%; max-width:42%; }
+      #certs .work__box:nth-of-type(5) .work__image-box{ margin-left:6rem; }
+    }
+
+    /* Even left & right edges for certificate paragraphs */
+    #certs .work__text p{
+      text-align: justify;
+      text-justify: inter-word;
+      text-align-last: left;           /* keep last line neat */
+      line-height: 1.8;
+      margin: 6px 0 10px;
+      hyphens: none;
+    }
+
+    /* Keep lists tidy and readable */
+    #certs .work__list{
+      list-style: disc outside;
+      padding-left: 1.4rem;
+      margin-top: 8px;
+    }
+    #certs .work__list li{ margin: 6px 0; line-height: 1.7; }
+
+    /* CSAP badge sizing */
+    #certs .csap-badge img{
+      max-width:420px;
+      height:auto;
+      display:block;
+      margin:0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+        <li class="nav__item"><a href="index.html#work" class="nav__link">Work</a></li>
+        <li class="nav__item"><a href="index.html#certifications" class="nav__link">Certifications</a></li>
+        <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+        <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main role="main">
+    <section class="work" id="certs">
+      <div class="row">
+        <h2>Certification Details</h2>
+
+        <!-- CySA+ -->
+        <div class="work__box">
+          <div class="work__text">
+            <h3>CompTIA Cybersecurity Analyst (CySA+)</h3>
+            <p>
+              Issuer: CompTIA<br />
+              Credential ID: <strong>0GW03KY5VB1EYMKJ</strong><br />
+              Validates the ability to apply <strong>behavioral analytics</strong> to networks and hosts for
+              <strong>threat detection</strong>, <strong>incident investigation</strong>, and
+              <strong>vulnerability management</strong> across SIEM/SOAR-driven environments.
+            </p>
+            <ul class="work__list">
+              <li>Threat detection, triage &amp; response playbooks</li>
+              <li>Security analytics (SIEM) &amp; monitoring</li>
+              <li>Vulnerability management &amp; risk prioritization</li>
+              <li>Incident reporting &amp; post-incident improvements</li>
+            </ul>
+          </div>
+          <div class="work__image-box">
+            <img src="./images/certificates/Cysa.png" alt="CompTIA CySA+ certificate" />
+          </div>
+        </div>
+
+        <!-- Security+ -->
+        <div class="work__box">
+          <div class="work__text">
+            <h3>CompTIA Security+</h3>
+            <p>
+              Issuer: CompTIA<br />
+              Credential ID: <strong>SJ4N6XKQ9NQ4KFWJ</strong><br />
+              Establishes a global baseline in <strong>core cybersecurity skills</strong> covering
+              <strong>secure architecture</strong>, <strong>risk management</strong>,
+              <strong>identity &amp; access management</strong>, and <strong>incident response</strong>.
+            </p>
+            <ul class="work__list">
+              <li>Secure network &amp; system architecture</li>
+              <li>Threats, vulnerabilities &amp; mitigations</li>
+              <li>IAM, cryptography &amp; PKI fundamentals</li>
+              <li>Operations security &amp; incident handling</li>
+            </ul>
+          </div>
+          <div class="work__image-box">
+            <img src="./images/certificates/Security.png" alt="CompTIA Security+ certificate" />
+          </div>
+        </div>
+
+        <!-- A+ -->
+        <div class="work__box">
+          <div class="work__text">
+            <h3>CompTIA A+</h3>
+            <p>
+              Issuer: CompTIA<br />
+              Credential ID: <strong>SGEQ8VB50EVESNY2</strong><br />
+              Validates IT support proficiency across <strong>hardware</strong>, <strong>operating systems</strong>,
+              <strong>troubleshooting</strong>, and <strong>basic networking &amp; security</strong>.
+            </p>
+            <ul class="work__list">
+              <li>PC hardware, peripherals &amp; storage</li>
+              <li>Windows, Linux &amp; basic OS administration</li>
+              <li>Troubleshooting methodology &amp; ticketing</li>
+              <li>Networking basics &amp; security hygiene</li>
+            </ul>
+          </div>
+          <div class="work__image-box">
+            <img src="./images/certificates/A.png" alt="CompTIA A+ certificate" />
+          </div>
+        </div>
+
+        <!-- Riscure -->
+        <div class="work__box">
+          <div class="work__text">
+            <h3>Embedded Systems Security</h3>
+            <p>
+              Issuer: Riscure Academy<br />
+              Hands-on training covering <strong>embedded system security</strong> with emphasis on
+              <strong>hardware attack surfaces</strong>, <strong>secure boot validation</strong>,
+              <strong>firmware integrity</strong>, and practical <strong>threat modeling</strong>.
+            </p>
+            <ul class="work__list">
+              <li>Embedded threat modeling &amp; risk analysis</li>
+              <li>Secure boot &amp; firmware integrity validation</li>
+              <li>Fault injection &amp; side-channel attack awareness</li>
+            </ul>
+          </div>
+          <div class="work__image-box">
+            <img src="./images/certificates/riscure.png" alt="Riscure Academy Security Training Certificate" />
+          </div>
+        </div>
+
+        <!-- CSAP -->
+        <div class="work__box">
+          <div class="work__text">
+            <h3>CompTIA Security Analytics Professional (CSAP) — Stackable Certification</h3>
+            <p>
+              Issuer: CompTIA<br />
+              The <strong>CompTIA Security Analytics Professional (CSAP)</strong> is a
+              <strong>stackable certification</strong> for IT professionals with <strong>2–5 years of experience</strong>
+              who want to specialize in <strong>cybersecurity analytics</strong>. It validates advanced expertise in
+              <strong> analyzing security data</strong>, <strong>detecting threats</strong>, and
+              <strong>managing incidents</strong> through <strong>data-driven insights</strong>. The CSAP credential is earned by
+              successfully completing both <strong>CompTIA Security+</strong> and
+              <strong>CompTIA Cybersecurity Analyst (CySA+)</strong> certifications.
+            </p>
+            <ul class="work__list">
+              <li>Security analytics to detect threats &amp; manage incidents</li>
+              <li>Application security &amp; behavioral analytics</li>
+              <li>Access management, network security &amp; risk management</li>
+            </ul>
+          </div>
+          <div class="work__image-box csap-badge">
+            <img src="./images/badges/csap_black.png" alt="CompTIA CSAP badge" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- All Badges -->
+    <section class="client" id="all-badges">
+      <div class="row">
+        <h2>All Badges</h2>
+        <div class="client__logos">
+          <img src="./images/badges/csap_black.png" class="client__logo" alt="CompTIA CSAP" />
+          <img src="./images/badges/cysa.png" class="client__logo" alt="CompTIA CySA+" />
+          <img src="./images/badges/securityplus.png" class="client__logo" alt="CompTIA Security+" />
+          <img src="./images/badges/aplus.png" class="client__logo" alt="CompTIA A+" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+<footer role="contentinfo" class="footer">
+  <div class="row">
+    <ul class="footer__social-links">
+      <li class="footer__social-link-item">
+        <a href="https://github.com/RuchiGiradkar" title="GitHub Profile" target="_blank">
+          <img src="./images/github.svg" class="footer__social-image" alt="GitHub">
+        </a>
+      </li>
+      <li class="footer__social-link-item">
+        <a href="https://www.linkedin.com/in/ruchi-giradkar/" title="LinkedIn Profile" target="_blank">
+          <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      &copy; 2025 — Designed &amp; Developed by <strong>Ruchi Giradkar</strong>.
+    </p>
+  </div>
+</footer>
+
+<!-- ===== Back to Top Button (Pink Circular Arrow) ===== -->
+<a href="#top" class="back-to-top" title="Back to Top">
+  <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+</a>
+
+<!-- ===== JavaScript for Back-to-Top Functionality ===== -->
+<script>
+  // Show or hide the back-to-top button when scrolling
+  const backToTopButton = document.querySelector(".back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTopButton.classList.add("show");
+    } else {
+      backToTopButton.classList.remove("show");
+    }
+  });
+</script>
+
+<!-- ===== Existing Template JS ===== -->
+<script src="./index.js"></script>
+
+<!-- ===== Optional CSS (Ensures the pink arrow appears correctly) ===== -->
+<style>
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff3366;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .back-to-top__image {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* white arrow */
+  }
+
+  .back-to-top:hover {
+    background-color: #e32e5d;
+    transform: translateY(-3px);
+  }
+</style>
+  </main>
+</body>
+</html>

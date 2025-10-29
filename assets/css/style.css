@@ -1,0 +1,76 @@
+/* Dark portfolio look (black background, pink accent), no external fonts */
+:root{
+  --bg:#0b0b0f;          /* deep black */
+  --panel:#121317;       /* dark card */
+  --ink:#e8ecf2;         /* main text */
+  --muted:#a7b0bf;       /* subdued text */
+  --accent:#ff2d60;      /* pink accent like the reference */
+  --border:#20222a;      /* card borders */
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+a{color:#c9d4ff;text-decoration:none;border-bottom:1px dotted rgba(201,212,255,.45)}
+a:hover{opacity:.9}
+.container{max-width:1100px;margin:0 auto;padding:0 18px}
+
+/* Header / Nav */
+.site-header{position:sticky;top:0;z-index:60;background:rgba(11,11,15,.85);backdrop-filter:blur(6px);border-bottom:1px solid #12141c}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{font-weight:700;letter-spacing:.3px;color:#fff;border:0}
+.menu{display:flex;gap:18px;flex-wrap:wrap}
+.menu a{border:0;color:#dfe4ee;opacity:.9}
+.menu a:hover{opacity:1;color:#fff}
+
+/* Hero */
+.hero{position:relative;padding:84px 0 54px;background:linear-gradient(180deg,#0f1016 0%, #0b0b0f 60%)}
+.hero-title{margin:0 0 10px;font-size:34px;letter-spacing:.2px}
+.hero-sub{margin:0;color:var(--muted)}
+.scroll-down{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);color:#fff;border:0;opacity:.6}
+.scroll-down:hover{opacity:1}
+
+/* Sections */
+.section{padding:36px 0}
+.section-title{margin:0 0 18px;font-size:24px;color:#f0f4ff;position:relative}
+.section-title span{border-bottom:3px solid var(--accent);padding-bottom:6px}
+
+/* Card (panel look) */
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px;
+  box-shadow:0 10px 24px rgba(0,0,0,.35) inset, 0 10px 24px rgba(0,0,0,.25)}
+.meta{color:var(--muted);font-size:14px;margin:6px 0 8px}
+
+/* Certifications grid – makes images show properly */
+.badge-grid{
+  list-style:none;padding:0;margin:0;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px
+}
+.badge{
+  background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:12px;
+  display:flex;gap:12px;align-items:center;min-height:88px
+}
+.badge img{
+  width:64px;height:64px;object-fit:contain;object-position:center;flex:0 0 64px;
+  background:#0c0d12;border-radius:10px;border:1px solid #1a1c25
+}
+.badge-title{font-weight:700;line-height:1.25}
+.badge-meta{color:var(--muted);font-size:14px}
+.muted{color:var(--muted);margin-top:10px}
+
+/* Lists */
+.card ul{margin:8px 0 0 18px}
+.skills{list-style:disc;margin:0 0 0 18px}
+
+/* Footer */
+.site-footer{border-top:1px solid #12141c;background:#000;padding:36px 0;margin-top:20px}
+.foot{display:flex;flex-direction:column;align-items:center;gap:16px}
+.socials{display:flex;gap:16px}
+.icon{color:#fff;border:0;display:inline-flex;padding:8px;background:#111;border-radius:10px}
+.icon:hover{background:#161616}
+.copy{color:#cfd6e6;font-size:14px;opacity:.8}
+
+/* Small screens */
+@media (max-width:640px){
+  .hero-title{font-size:28px}
+  .menu{gap:12px}
+}
