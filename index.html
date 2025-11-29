@@ -10,14 +10,14 @@
   <!-- Global stylesheet -->
   <link rel="stylesheet" href="index.css" />
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PSF16HS56"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PSF16HS56"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-8PSF16HS56');
-</script>
+    gtag('config', 'G-8PSF16HS56');
+  </script>
 </head>
 <body>
 
@@ -40,7 +40,7 @@
         <h1 class="heading-primary"><span>Ruchi Giradkar</span></h1>
         <p>Cyber Security Specialist | 
           <br>CompTIA Cybersecurity Analyst (CySA+) | Security+ |
-          <br>M.Eng. in Mechatronic & Cyber-Physical Systems</p>
+          <br>M.Eng. in Mechatronic &amp; Cyber-Physical Systems</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
@@ -95,11 +95,22 @@
     #about { padding-top: var(--gutter-medium); }
     #about h2 { margin-bottom: var(--gutter-normal); }
     #about .about__content {
-      display: grid; grid-template-columns: 48% 52%;
-      column-gap: 40px; align-items: start; margin-top: 0;
+      display: grid;
+      grid-template-columns: 40% 60%;  /* Updated for better balance (Option A) */
+      column-gap: 40px;
+      align-items: start;
+      margin-top: 0;
     }
     #about .about__photo-container { align-self: start; display:flex; justify-content:center; }
-    #about .about__photo { width:100%; max-width:600px; height:auto; object-fit:contain; margin:0; border-radius:0; display:block; }
+    #about .about__photo {
+      width:100%;
+      max-width:700px;            /* Updated to make image larger (Option B) */
+      height:auto;
+      object-fit:contain;
+      margin:0;
+      border-radius:0;
+      display:block;
+    }
     #about .about__text {
       align-self: start; margin-top:-4px; padding-top:0;
       font-size:1.8rem; line-height:1.85;
@@ -276,70 +287,67 @@
     </section>
     <!-- ===================== /CERTIFICATIONS ===================== -->
 
-<!-- ===== SKILLS SECTION ===== -->
-<!-- New Skills Section -->
-<section class="skills" id="skills">
-  <div class="row">
-    <h2>Skills</h2>
-    <div class="skills-text">
-      <h3>Technical Skills</h3>
-      <ul>
-        <li><strong>Cybersecurity Operations & Threat Management:</strong> Threat Analysis & Risk Assessment (TARA), STRIDE, VAPT, Security Architecture, Digital Forensics</li>
-        <li><strong>Security Tools & Platforms:</strong> Nmap, Wireshark, Greenbone (OpenVAS), Metasploit, Hydra, Autopsy, Tcpdump, ANSYS Medini Analyze</li>
-        <li><strong>Security Frameworks & Standards:</strong> NIST, MITRE ATT&CK, ISO/SAE 21434, ISO 27001, GDPR, OWASP Top 10, UN ECE R155</li>
-        <li><strong>Network & System Security:</strong> Firewalls, IDS/IPS, VPNs, TCP/IP, Prometheus, Grafana, Docker Security</li>
-        <li><strong>Development & Automation:</strong> Python, PowerShell, Shell/Bash, Detection & Response Automation, Kali Linux</li>
-        <li><strong>Version Control & Project Management:</strong> Git, GitLab, SVN, Jira, Stakeholder Communication, Security Workshops</li>
-        <li><strong>Consulting & Collaboration:</strong> Stakeholder Communication, Security Workshops & Training, Technical Documentation, Cross-functional Team Coordination, Risk Mitigation Planning</li>
-      </ul>
-      <br />
-      <h3>Languages</h3>
-      <ul>
-        <li>English (Fluent)</li>
-        <li>German (Level B1 – in progress)</li>
-        <li>Japanese (Level – JLPT N3)</li>
-        <li>Hindi</li>
-        <li>Marathi</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-  
-    <!-- ===================== ABOUT (Perfect Top Alignment) ===================== -->
-<section class="about" id="about">
-  <div class="row">
-    <h2>About Me</h2>
-    <div class="about__content">
-      <div class="about__photo-container">
-        <img class="about__photo" src="./images/ruchi_profile.jpg" alt="Ruchi Giradkar" />
+    <!-- ===== SKILLS SECTION ===== -->
+    <!-- New Skills Section -->
+    <section class="skills" id="skills">
+      <div class="row">
+        <h2>Skills</h2>
+        <div class="skills-text">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li><strong>Cybersecurity Operations &amp; Threat Management:</strong> Threat Analysis &amp; Risk Assessment (TARA), STRIDE, VAPT, Security Architecture, Digital Forensics</li>
+            <li><strong>Security Tools &amp; Platforms:</strong> Nmap, Wireshark, Greenbone (OpenVAS), Metasploit, Hydra, Autopsy, Tcpdump, ANSYS Medini Analyze</li>
+            <li><strong>Security Frameworks &amp; Standards:</strong> NIST, MITRE ATT&amp;CK, ISO/SAE 21434, ISO 27001, GDPR, OWASP Top 10, UN ECE R155</li>
+            <li><strong>Network &amp; System Security:</strong> Firewalls, IDS/IPS, VPNs, TCP/IP, Prometheus, Grafana, Docker Security</li>
+            <li><strong>Development &amp; Automation:</strong> Python, PowerShell, Shell/Bash, Detection &amp; Response Automation, Kali Linux</li>
+            <li><strong>Version Control &amp; Project Management:</strong> Git, GitLab, SVN, Jira, Stakeholder Communication, Security Workshops</li>
+            <li><strong>Consulting &amp; Collaboration:</strong> Stakeholder Communication, Security Workshops &amp; Training, Technical Documentation, Cross-functional Team Coordination, Risk Mitigation Planning</li>
+          </ul>
+          <br />
+          <h3>Languages</h3>
+          <ul>
+            <li>English (Fluent)</li>
+            <li>German (Level B1 – in progress)</li>
+            <li>Japanese (Level – JLPT N3)</li>
+            <li>Hindi</li>
+            <li>Marathi</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
+    <!-- ===================== ABOUT (Perfect Top Alignment) ===================== -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/ruchi_profile.jpg" alt="Ruchi Giradkar" />
+          </div>
 
-<div class="about__text">
-  <p>
-    <strong>I am driven by the challenge of reducing cyber risk and building secure systems across IT and embedded environments.</strong> Over the past <strong>3+ years</strong>, I have focused on <strong>threat analysis</strong>, <strong>vulnerability assessments</strong>, and <strong>risk management</strong> to help organizations strengthen their security posture, reduce cyber risk, and make informed, security-driven decisions.
-  </p>
+          <div class="about__text">
+            <p>
+              <strong>I am driven by the challenge of reducing cyber risk and building secure systems across IT and embedded environments.</strong> Over the past <strong>3+ years</strong>, I have focused on <strong>threat analysis</strong>, <strong>vulnerability assessments</strong>, and <strong>risk management</strong> to help organizations strengthen their security posture, reduce cyber risk, and make informed, security-driven decisions.
+            </p>
 
-  <p>
-    At <strong>Continental Automotive Technologies</strong>, I executed <strong>threat analysis</strong> across multiple attack paths, performed <strong>vulnerability assessments</strong>, and supported <strong>risk management</strong> activities that enabled prioritized security controls and contributed to <strong>cyber-resilient automotive architectures</strong>. I also developed structured <strong>security documentation</strong>, <strong>risk reports</strong>, and <strong>mitigation strategies</strong> that supported engineering teams, suppliers, and stakeholders throughout the development lifecycle.
-  </p>
+            <p>
+              At <strong>Continental Automotive Technologies</strong>, I executed <strong>threat analysis</strong> across multiple attack paths, performed <strong>vulnerability assessments</strong>, and supported <strong>risk management</strong> activities that enabled prioritized security controls and contributed to <strong>cyber-resilient automotive architectures</strong>. I also developed structured <strong>security documentation</strong>, <strong>risk reports</strong>, and <strong>mitigation strategies</strong> that supported engineering teams, suppliers, and stakeholders throughout the development lifecycle.
+            </p>
 
-  <p>
-    Alongside my <strong>CompTIA CySA+</strong>, <strong>Security+</strong>, and <strong>A+</strong> certifications, I bring hands-on experience in <strong>penetration testing</strong>, <strong>log analysis</strong>, <strong>digital forensics</strong>, and <strong>attack surface evaluations</strong>. During my <strong>Master’s thesis at Robert Bosch</strong>, I built a <strong>Digital Twin based Intrusion Detection System</strong> using Docker for Industry 4.0 environments, improving anomaly-detection accuracy by <strong>25%</strong> and enabling proactive threat identification. Before transitioning into cybersecurity, I worked as a <strong>bilingual (Japanese- English) software developer at Fujitsu</strong> collaborating onsite in <strong>Tokyo</strong>, gaining strong technical and cross-cultural experience.
-  </p>
+            <p>
+              Alongside my <strong>CompTIA CySA+</strong>, <strong>Security+</strong>, and <strong>A+</strong> certifications, I bring hands-on experience in <strong>penetration testing</strong>, <strong>log analysis</strong>, <strong>digital forensics</strong>, and <strong>attack surface evaluations</strong>. During my <strong>Master’s thesis at Robert Bosch</strong>, I built a <strong>Digital Twin based Intrusion Detection System</strong> using Docker for Industry 4.0 environments, improving anomaly-detection accuracy by <strong>25%</strong> and enabling proactive threat identification. Before transitioning into cybersecurity, I worked as a <strong>bilingual (Japanese- English) software developer at Fujitsu</strong> collaborating onsite in <strong>Tokyo</strong>, gaining strong technical and cross-cultural experience.
+            </p>
 
-  <p>
-    Across my roles in <strong>Germany</strong>, <strong>Japan</strong>, and <strong>India</strong>, I have built a global professional background and excelled in <strong>cross-functional</strong> and <strong>multicultural environments</strong>. I am focused to build <strong>secure digital systems</strong>, reduce organizational risk, and strengthen <strong>cybersecurity posture</strong> across IT landscapes. As I continue deepening my expertise in cybersecurity, I welcome connections with professionals who are working to advance secure and resilient digital systems.
-  </p>
-</div>
+            <p>
+              Across my roles in <strong>Germany</strong>, <strong>Japan</strong>, and <strong>India</strong>, I have built a global professional background and excelled in <strong>cross-functional</strong> and <strong>multicultural environments</strong>. I am focused to build <strong>secure digital systems</strong>, reduce organizational risk, and strengthen <strong>cybersecurity posture</strong> across IT landscapes. As I continue deepening my expertise in cybersecurity, I welcome connections with professionals who are working to advance secure and resilient digital systems.
+            </p>
+          </div>
 
-      
-    </div>
-  </div>
-</section>
-<!-- ===================== /ABOUT ===================== -->
-        
+        </div>
+      </div>
+    </section>
+    <!-- ===================== /ABOUT ===================== -->
+
     <!-- ===================== CONTACT ===================== -->
     <section class="contact" id="contact">
       <div class="row">
@@ -351,94 +359,105 @@
             please reach out through my LinkedIn profile using the link below.
           </p>
           
-           <a href="https://www.linkedin.com/in/ruchi-giradkar/" class="btn btn--pink">Visit my LinkedIn</a>
+          <a href="https://www.linkedin.com/in/ruchi-giradkar/" class="btn btn--pink">Visit my LinkedIn</a>
         </div>
       </div>
     </section>
     <!-- ===================== /CONTACT ===================== -->
+
     <!-- ===================== FOOTER ===================== -->
-<!-- ===================== FOOTER ===================== -->
-<footer role="contentinfo" class="footer">
-  <div class="row">
-    <ul class="footer__social-links">
-      <li class="footer__social-link-item">
-        <a href="https://github.com/RuchiGiradkar" title="GitHub Profile" target="_blank">
-          <img src="./images/github.svg" class="footer__social-image" alt="GitHub">
-        </a>
-      </li>
-      <li class="footer__social-link-item">
-        <a href="https://www.linkedin.com/in/ruchi-giradkar/" title="LinkedIn Profile" target="_blank">
-          <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
-        </a>
-      </li>
-    </ul>
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a href="https://github.com/RuchiGiradkar" title="GitHub Profile" target="_blank">
+              <img src="./images/github.svg" class="footer__social-image" alt="GitHub">
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/ruchi-giradkar/" title="LinkedIn Profile" target="_blank">
+              <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+            </a>
+          </li>
+        </ul>
 
-    <p>
-      &copy; 2025 — Designed &amp; Developed by <strong>Ruchi Giradkar</strong>.
-    </p>
-  </div>
-</footer>
+        <p>
+          &copy; 2025 — Designed &amp; Developed by <strong>Ruchi Giradkar</strong>.
+        </p>
+      </div>
+    </footer>
 
-<!-- ===== Back to Top Button (Pink Circular Arrow) ===== -->
-<a href="#top" class="back-to-top" title="Back to Top">
-  <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-</a>
+    <!-- ===== Back to Top Button (Pink Circular Arrow) ===== -->
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    </a>
 
-<!-- ===== JavaScript for Back-to-Top Functionality ===== -->
-<script>
-  // Show or hide the back-to-top button when scrolling
-  const backToTopButton = document.querySelector(".back-to-top");
+    <!-- ===== JavaScript for Back-to-Top Functionality ===== -->
+    <script>
+      // Show or hide the back-to-top button when scrolling
+      const backToTopButton = document.querySelector(".back-to-top");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 400) {
-      backToTopButton.classList.add("show");
-    } else {
-      backToTopButton.classList.remove("show");
-    }
-  });
-</script>
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+          backToTopButton.classList.add("show");
+        } else {
+          backToTopButton.classList.remove("show");
+        }
+      });
+    </script>
 
-<!-- ===== Existing Template JS ===== -->
-<script src="./index.js"></script>
+    <!-- ===== Existing Template JS ===== -->
+    <script src="./index.js"></script>
 
-<!-- ===== Optional CSS (Ensures the pink arrow appears correctly) ===== -->
-<style>
-  .back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #ff3366;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 9999;
-  }
+    <!-- ===== Optional CSS (Ensures the pink arrow appears correctly) ===== -->
+    <style>
+      .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #ff3366;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 9999;
+      }
 
-  .back-to-top.show {
-    opacity: 1;
-    visibility: visible;
-  }
+      .back-to-top.show {
+        opacity: 1;
+        visibility: visible;
+      }
 
-  .back-to-top__image {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1); /* white arrow */
-  }
+      .back-to-top__image {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) invert(1); /* white arrow */
+      }
 
-  .back-to-top:hover {
-    background-color: #e32e5d;
-    transform: translateY(-3px);
-  }
-</style>
- <!-- ===================== FOOTER ===================== -->
+      .back-to-top:hover {
+        background-color: #e32e5d;
+        transform: translateY(-3px);
+      }
+    </style>
+    <!-- ===================== FOOTER ===================== -->
 
-    
   </main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+ChatGPT can make mistakes. Check important info. See 
