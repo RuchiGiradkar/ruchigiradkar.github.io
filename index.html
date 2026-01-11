@@ -94,42 +94,73 @@
     #certifications .client__logos{ gap:60px; justify-content:center; align-items:center; }
 
     /* ---------- About section (desktop is justified already) ---------- */
-    #about { padding-top: var(--gutter-medium); }
-    #about h2 { margin-bottom: var(--gutter-normal); }
-    #about .about__content {
-      display: grid;
-      grid-template-columns: 40% 60%;  /* Updated for better balance (Option A) */
-      column-gap: 40px;
-      align-items: start;
-      margin-top: 0;
-    }
-    #about .about__photo-container { align-self: start; display:flex; justify-content:center; }
-    #about .about__photo {
-      width:100%;
-      max-width:700px;            /* Updated to make image larger (Option B) */
-      height:auto;
-      object-fit:contain;
-      margin:0;
-      border-radius:0;
-      display:block;
-    }
-    #about .about__text {
-      align-self: start; margin-top:-4px; padding-top:0;
-      font-size:1.8rem; line-height:1.85;
-      text-align: justify; text-justify: inter-word; text-align-last: left; hyphens:auto;
-    }
-    #about .about__text p:first-of-type { margin-top:0; }
-    #about .about__text p { margin-bottom:1.6rem; }
-    #about .btn { margin-top:1rem; }
-
-    @media (max-width:1023.98px){
-      #about { padding-top: var(--gutter-normal); }
-      #about .about__content { display:flex; flex-direction:column; gap:28px; }
-      #about .about__photo { max-width:620px; }
-      /* On narrow screens, left-align for readability */
-      #about .about__text { text-align:left; text-justify:auto; text-align-last:auto; }
-    }
-
+        #about { padding-top: var(--gutter-medium); }
+        #about h2 { margin-bottom: var(--gutter-normal); }
+        
+        #about .about__content {
+          display: grid;
+          grid-template-columns: 38% 62%;   /* Wider text column */
+          column-gap: 1cm;                 /* EXACT 1cm gap between image and text */
+          align-items: start;
+          margin-top: 0;
+        }
+        
+        #about .about__photo-container { 
+          align-self: start; 
+          display: flex; 
+          justify-content: center; 
+        }
+        
+        #about .about__photo {
+          width: 100%;
+          max-width: 700px;
+          height: auto;
+          object-fit: contain;
+          margin: 0;
+          border-radius: 0;
+          display: block;
+        }
+      
+      #about .about__text {
+        align-self: start;
+        margin-top: -4px;
+        padding-top: 0;
+        max-width: 960px;                /* WIDENS text box so it doesn’t look tall */
+        font-size: 1.8rem;
+        line-height: 1.85;
+        text-align: justify;
+        text-justify: inter-word;
+        text-align-last: left;
+        hyphens: auto;
+      }
+      
+      #about .about__text p:first-of-type { margin-top: 0; }
+      #about .about__text p { margin-bottom: 1.6rem; }
+      #about .btn { margin-top: 1rem; }
+      
+      
+      /* ---------- Tablet & mobile ---------- */
+      @media (max-width:1023.98px){
+        #about { padding-top: var(--gutter-normal); }
+      
+        #about .about__content { 
+          display: flex; 
+          flex-direction: column; 
+          gap: 28px; 
+        }
+      
+        #about .about__photo { 
+          max-width: 620px; 
+        }
+      
+        /* On narrow screens, left-align for readability */
+        #about .about__text { 
+          text-align: left; 
+          text-justify: auto; 
+          text-align-last: auto; 
+          max-width: 100%;
+        }
+      }
     /* ---------- Contact paragraph justification ---------- */
     #contact .contact__info p{
       text-align: justify;
