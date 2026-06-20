@@ -391,100 +391,262 @@
 <!-- ==================== /CERTIFICATIONS ==================== -->
 
 <!-- ===== SKILLS SECTION ===== -->
+```html
+<!-- ===== SKILLS SECTION STYLING ===== -->
+<style>
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid #333;
+  padding: 1.4rem 1.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.skills-table th {
+  font-weight: 700;
+}
+
+.skills-table td:first-child {
+  width: 28%;
+  white-space: nowrap;
+}
+
+.skills-text p {
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .skills-table {
+    font-size: 1.4rem;
+  }
+
+  .skills-table td:first-child {
+    width: 35%;
+  }
+}
+</style>
+
 <!-- ===== SKILLS SECTION ===== -->
 <section class="skills" id="skills">
   <div class="row">
-    <h2>Technical Skills &amp; Expertise</h2>
+
+    <h2>Technical Skills</h2>
 
     <div class="skills-text">
 
-      <h3>Technical Skills</h3>
+      <h3>Cybersecurity Domains</h3>
 
       <p>
-        Cybersecurity professional with hands on experience in Security Operations, Incident Response, Threat Detection, Vulnerability Management, Digital Forensics, Cloud Security, OT Security, Application Security, Security Architecture, and Governance Risk &amp; Compliance. Experienced in conducting security assessments, investigating threats, validating vulnerabilities, automating security workflows, and supporting enterprise security initiatives across cloud, infrastructure, and operational technology environments.
+        Security Operations &middot; Incident Response &middot; Threat Detection &middot;
+        Vulnerability Management &middot; Digital Forensics &middot; Cloud Security &middot;
+        Application Security &middot; OT Security &middot; Security Architecture &middot;
+        Governance Risk &amp; Compliance &middot; Threat Modeling
       </p>
 
-      <ul>
+      <br>
 
-        <li>
-          <strong>Cybersecurity Domains:</strong>
-          Security Operations &middot; Incident Response &middot; Threat Detection &middot; Vulnerability Management &middot; Penetration Testing &middot; Digital Forensics &middot; Cloud Security &middot; Application Security &middot; OT Security &middot; Security Architecture &middot; Governance Risk &amp; Compliance &middot; Threat Modeling
-        </li>
+      <h3>Skill Matrix</h3>
 
-        <li>
-          <strong>Security Operations &amp; Incident Response:</strong>
-          Security Monitoring &middot; Alert Analysis &middot; Incident Response Lifecycle &middot; Incident Triage &middot; Zero Day Vulnerability Response &middot; Log4Shell Analysis &middot; Business Impact Assessment &middot; Ransomware Recovery &middot; Incident Documentation &middot; Root Cause Analysis &middot; Remediation Prioritization
-        </li>
+      <table class="skills-table">
 
-        <li>
-          <strong>Threat Detection &amp; SIEM Monitoring:</strong>
-          Splunk Enterprise &middot; SIEM Investigation &middot; Security Event Correlation &middot; Linux Authentication Log Analysis &middot; Brute Force Detection &middot; Invalid User Activity Analysis &middot; Threat Detection Engineering &middot; Security Analytics &middot; Detection Automation &middot; MITRE ATT&amp;CK Mapping &middot; Security Monitoring Dashboards
-        </li>
+        <tr>
+          <th>Focus Area</th>
+          <th>Core Skills</th>
+        </tr>
 
-        <li>
-          <strong>Vulnerability Management &amp; Offensive Security:</strong>
-          Vulnerability Assessment &middot; Penetration Testing &middot; Vulnerability Validation &middot; CVSS Risk Scoring &middot; Risk Based Vulnerability Prioritization &middot; Attack Surface Analysis &middot; Network Reconnaissance &middot; Service Enumeration &middot; Security Remediation Planning &middot; False Positive Reduction
-        </li>
+        <tr>
+          <td><strong>Security Operations</strong></td>
+          <td>
+            Security Monitoring &middot; Alert Analysis &middot; Incident Triage &middot;
+            Incident Response Lifecycle &middot; Business Impact Assessment &middot;
+            Ransomware Recovery
+          </td>
+        </tr>
 
-        <li>
-          <strong>Application Security:</strong>
-          OWASP ZAP &middot; OWASP Top 10 &middot; Web Application Security Testing &middot; SQL Injection Testing &middot; Cross Site Scripting Assessment &middot; Input Validation Review &middot; Authentication Security Review &middot; Session Management Assessment &middot; Insecure Configuration Analysis
-        </li>
+        <tr>
+          <td><strong>Threat Detection &amp; SIEM</strong></td>
+          <td>
+            Splunk Enterprise &middot; SIEM Investigation &middot;
+            Security Event Correlation &middot;
+            Linux Authentication Log Analysis &middot;
+            Brute Force Detection &middot;
+            MITRE ATT&amp;CK Mapping
+          </td>
+        </tr>
 
-        <li>
-          <strong>Cloud Security &amp; Infrastructure Security:</strong>
-          Microsoft Azure Security &middot; Azure Virtual Machines &middot; Azure Network Security Groups (NSG) &middot; Azure Monitor &middot; Cloud Risk Assessment &middot; Cloud Security Controls &middot; Security Configuration Review &middot; Linux Security &middot; Security Hardening &middot; Container Security &middot; Docker &middot; Network Security &middot; TCP/IP &middot; Firewalls &middot; IDS/IPS &middot; VPN Technologies
-        </li>
+        <tr>
+          <td><strong>Vulnerability Management</strong></td>
+          <td>
+            Vulnerability Assessment &middot; Penetration Testing &middot;
+            CVSS Risk Scoring &middot;
+            Vulnerability Validation &middot;
+            Attack Surface Analysis &middot;
+            Remediation Prioritization
+          </td>
+        </tr>
 
-        <li>
-          <strong>Network Security &amp; Enumeration:</strong>
-          Nmap &middot; Nmap Scripting Engine (NSE) &middot; Host Discovery &middot; TCP and UDP Analysis &middot; Service and Version Detection &middot; Operating System Fingerprinting &middot; Vulnerability Scanning &middot; Slowloris Vulnerability Validation &middot; Network Attack Surface Reduction
-        </li>
+        <tr>
+          <td><strong>Application Security</strong></td>
+          <td>
+            OWASP ZAP &middot; OWASP Top 10 &middot;
+            SQL Injection Testing &middot;
+            Cross Site Scripting Assessment &middot;
+            Input Validation Review &middot;
+            Authentication Security Review
+          </td>
+        </tr>
 
-        <li>
-          <strong>Digital Forensics &amp; Investigations:</strong>
-          Evidence Acquisition &middot; Evidence Preservation &middot; Chain of Custody &middot; Timeline Reconstruction &middot; Incident Investigation &middot; Digital Forensic Analysis &middot; Security Event Investigation &middot; Forensic Reporting &middot; Risk Based Findings Documentation
-        </li>
+        <tr>
+          <td><strong>Cloud Security</strong></td>
+          <td>
+            Microsoft Azure Security &middot;
+            Azure Virtual Machines &middot;
+            Azure Network Security Groups &middot;
+            Azure Monitor &middot;
+            Cloud Risk Assessment &middot;
+            Security Configuration Review
+          </td>
+        </tr>
 
-        <li>
-          <strong>Security Architecture &amp; Governance:</strong>
-          Zero Trust Architecture &middot; Enterprise Security Architecture &middot; Identity and Access Management &middot; Least Privilege Access &middot; Security Control Design &middot; Security Strategy &middot; Risk Assessment &middot; Security Governance &middot; Security Controls Assessment &middot; Data Protection &middot; Operational Technology Security &middot; Industry 4.0 Security &middot; Digital Twin Security
-        </li>
+        <tr>
+          <td><strong>Network Security</strong></td>
+          <td>
+            Nmap &middot;
+            Nmap Scripting Engine &middot;
+            Host Discovery &middot;
+            Service Enumeration &middot;
+            TCP and UDP Analysis &middot;
+            Operating System Fingerprinting
+          </td>
+        </tr>
 
-        <li>
-          <strong>Security Frameworks &amp; Standards:</strong>
-          NIST Cybersecurity Framework &middot; ISO/IEC 27001 &middot; MITRE ATT&amp;CK &middot; OWASP Top 10 &middot; ISO/SAE 21434 &middot; UNECE R155 &middot; STRIDE &middot; Threat Modeling &middot; Vulnerability Management Lifecycle &middot; Governance Risk &amp; Compliance
-        </li>
+        <tr>
+          <td><strong>Digital Forensics</strong></td>
+          <td>
+            Evidence Acquisition &middot;
+            Evidence Preservation &middot;
+            Chain of Custody &middot;
+            Timeline Reconstruction &middot;
+            Incident Investigation &middot;
+            Forensic Reporting
+          </td>
+        </tr>
 
-        <li>
-          <strong>Automation, Monitoring &amp; Visualization:</strong>
-          Python &middot; PowerShell &middot; Bash/Shell &middot; Security Automation &middot; Detection Automation &middot; Log Parsing &middot; Incident Response Automation &middot; Ransomware Recovery Automation &middot; Prometheus &middot; Grafana &middot; Monitoring and Alerting &middot; Security Reporting
-        </li>
+        <tr>
+          <td><strong>Security Architecture</strong></td>
+          <td>
+            Zero Trust Architecture &middot;
+            Enterprise Security Architecture &middot;
+            Identity and Access Management &middot;
+            Security Control Design &middot;
+            OT Security &middot;
+            Industry 4.0 Security
+          </td>
+        </tr>
 
-        <li>
-          <strong>Security Tools &amp; Platforms:</strong>
-          Splunk Enterprise &middot; Nmap &middot; Wireshark &middot; Tcpdump &middot; OWASP ZAP &middot; Nessus &middot; Greenbone OpenVAS &middot; Metasploit &middot; Hydra &middot; Autopsy &middot; Docker &middot; Kali Linux &middot; Git &middot; Jira
-        </li>
+        <tr>
+          <td><strong>Security Frameworks</strong></td>
+          <td>
+            NIST Cybersecurity Framework &middot;
+            ISO/IEC 27001 &middot;
+            MITRE ATT&amp;CK &middot;
+            OWASP Top 10 &middot;
+            ISO/SAE 21434 &middot;
+            UNECE R155 &middot;
+            STRIDE &middot;
+            Threat Modeling
+          </td>
+        </tr>
 
-        <li>
-          <strong>Professional Skills:</strong>
-          Technical Documentation &middot; Security Assessment Reporting &middot; Stakeholder Communication &middot; Risk Communication &middot; Audit Ready Documentation &middot; Security Recommendations &middot; Remediation Planning &middot; Cross Functional Collaboration
-        </li>
+        <tr>
+          <td><strong>Automation &amp; Monitoring</strong></td>
+          <td>
+            Python &middot;
+            PowerShell &middot;
+            Bash/Shell &middot;
+            Detection Automation &middot;
+            Log Parsing &middot;
+            Prometheus &middot;
+            Grafana &middot;
+            Security Reporting
+          </td>
+        </tr>
 
-      </ul>
+      </table>
+
+      <br>
+
+      <h3>Security Tools &amp; Platforms</h3>
+
+      <p>
+        Splunk Enterprise &middot;
+        Microsoft Azure &middot;
+        Python &middot;
+        Docker &middot;
+        Nmap &middot;
+        Wireshark &middot;
+        Tcpdump &middot;
+        OWASP ZAP &middot;
+        Nessus &middot;
+        OpenVAS &middot;
+        Metasploit &middot;
+        Hydra &middot;
+        Autopsy &middot;
+        Kali Linux &middot;
+        Prometheus &middot;
+        Grafana &middot;
+        Git &middot;
+        Jira
+      </p>
 
       <br>
 
       <h3>Languages</h3>
-      <ul>
-        <li><strong>English:</strong> Fluent</li>
-        <li><strong>German:</strong> B1 Level (Currently Improving Professional Proficiency)</li>
-        <li><strong>Japanese:</strong> JLPT N3 (Intermediate Professional Working Proficiency)</li>
-        <li><strong>Hindi:</strong> Native / Fluent</li>
-        <li><strong>Marathi:</strong> Native / Fluent</li>
-      </ul>
+
+      <table class="skills-table">
+
+        <tr>
+          <th>Language</th>
+          <th>Proficiency</th>
+        </tr>
+
+        <tr>
+          <td><strong>English</strong></td>
+          <td>Fluent</td>
+        </tr>
+
+        <tr>
+          <td><strong>German</strong></td>
+          <td>B1 Level (Currently Improving Professional Proficiency)</td>
+        </tr>
+
+        <tr>
+          <td><strong>Japanese</strong></td>
+          <td>JLPT N3 (Intermediate Professional Working Proficiency)</td>
+        </tr>
+
+        <tr>
+          <td><strong>Hindi</strong></td>
+          <td>Native / Fluent</td>
+        </tr>
+
+        <tr>
+          <td><strong>Marathi</strong></td>
+          <td>Native / Fluent</td>
+        </tr>
+
+      </table>
 
     </div>
+
   </div>
 </section>
 
