@@ -36,43 +36,99 @@
       </nav>
     </div>
 
-You know the whole code now. Easily write it again. Only the div code for that 50% left, 50% right.
-<div class="header__text-box row" style="display: flex; flex-direction: column; width: 100%;">
+<div class="header__text-box row"
+     style="position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
+            width: 90%;
+            max-width: 1180px;
+            margin: 80px auto 0;
+            display: block;">
 
-  <div style="display: flex; width: 100%; gap: 40px; align-items: flex-start;">
+  <!-- 50% LEFT + 50% RIGHT -->
+  <div style="display: grid;
+              grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+              column-gap: 60px;
+              width: 100%;
+              align-items: start;">
 
-    <!-- LEFT BOX: Keywords -->
-    <div class="header__text" style="flex: 0 0 calc(50% - 20px); max-width: calc(50% - 20px); box-sizing: border-box;">
-      <h1 class="heading-primary"><span>Ruchi Giradkar</span></h1>
+    <!-- LEFT BOX: KEYWORDS -->
+    <div class="header__text"
+         style="position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 100%;
+                max-width: none;
+                margin: 0;">
 
-      <p>
+      <h1 class="heading-primary"
+          style="margin-top: 0;">
+        <span>Ruchi Giradkar</span>
+      </h1>
+
+      <p style="margin: 0;
+                line-height: 1.6;">
         Cybersecurity Specialist |
-        <br>Cybersecurity Analyst | Security Engineering | GRC | Vulnerability Management | Threat Modeling | Application Security | Security Operations | Cloud Security
-        <br>CompTIA Cybersecurity Analyst (CySA+) | Security+ |
-        <br>M.Eng. in Mechatronic &amp; Cyber-Physical Systems
+        <br>
+        Cybersecurity Analyst | Security Engineering | GRC |
+        Vulnerability Management | Threat Modeling | Application Security |
+        Security Operations | Cloud Security
+        <br>
+        CompTIA Cybersecurity Analyst (CySA+) | Security+ |
+        <br>
+        M.Eng. in Mechatronic &amp; Cyber-Physical Systems
       </p>
+
     </div>
 
-    <!-- RIGHT BOX: Professional Background -->
-    <div class="header__text" style="flex: 0 0 calc(50% - 20px); max-width: calc(50% - 20px); box-sizing: border-box;">
-      <p>
-        Cybersecurity professional with 3+ years of experience in cybersecurity risk assessment, threat modeling, vulnerability analysis, security control evaluation, and risk-based mitigation across automotive, enterprise, and industrial environments.
+
+    <!-- RIGHT BOX: PROFESSIONAL BACKGROUND -->
+    <div class="header__text"
+         style="position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 100%;
+                max-width: none;
+                margin: 0;">
+
+      <p style="margin: 0;
+                line-height: 1.6;">
+        Cybersecurity professional with 3+ years of experience in cybersecurity
+        risk assessment, threat modeling, vulnerability analysis, security
+        control evaluation, and risk-based mitigation across automotive,
+        enterprise, and industrial environments.
 
         <br><br>
 
-        Building on a professional foundation in cybersecurity engineering and risk management, I have expanded my expertise into broader IT cybersecurity through practical security assessments and projects covering application security, vulnerability management, SIEM and security investigations, incident response, Azure cloud security, Zero Trust architecture, and ISO/IEC 27001 GRC.
+        Building on a professional foundation in cybersecurity engineering and
+        risk management, I have expanded my expertise into broader IT
+        cybersecurity through practical security assessments and projects
+        covering application security, vulnerability management, SIEM and
+        security investigations, incident response, Azure cloud security,
+        Zero Trust architecture, and ISO/IEC 27001 GRC.
 
         <br><br>
 
-        My background also includes application development experience, providing an understanding of software development environments alongside security engineering, risk, and compliance.
+        My background also includes application development experience,
+        providing an understanding of software development environments
+        alongside security engineering, risk, and compliance.
       </p>
+
     </div>
 
   </div>
 
-  <!-- Button Below Both Boxes -->
-  <div style="width: 100%; margin-top: 30px;">
+
+  <!-- BUTTON BELOW BOTH COLUMNS -->
+  <div style="width: 100%;
+              margin-top: 35px;
+              text-align: left;">
+
     <a href="#contact" class="btn btn--pink">Get in touch</a>
+
   </div>
 
 </div>
